@@ -114,7 +114,6 @@ img{ max-width:100%; display:block; }
   border-radius: 10px;
   display:grid;
   place-items:center;
-  background: linear-gradient(135deg, hsl(174, 62%, 47%) 0%, hsl(190, 70%, 40%) 50%, hsl(220, 60%, 35%) 100%);
   color: white;
   font-weight: 900;
 }
@@ -232,6 +231,41 @@ img{ max-width:100%; display:block; }
   gap: 12px;
   flex-wrap:wrap;
 }
+
+/* Partner logos as images */
+.partner-logo{
+  height: 56px;
+  min-width: 140px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, filter .18s ease;
+}
+
+.partner-logo img{
+  height: 42px;          /* logo height inside pill */
+  max-width: 120px;
+  width: auto;
+  object-fit: contain;
+  opacity: .85;
+}
+
+.partner-logo:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(15,23,42,.08);
+  border-color: #cfe2f4;
+  background: #ffffff;
+}
+
+.partner-logo:hover img{
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
 
 .hero-badges{
   display:flex;
@@ -538,7 +572,6 @@ img{ max-width:100%; display:block; }
   text-align:center;
   box-shadow: 0 12px 34px rgba(15,23,42,.06);
 }
-
 .avatar{
   width: 56px;
   height: 56px;
@@ -563,7 +596,7 @@ img{ max-width:100%; display:block; }
   transition: transform .3s ease;
 }
 
-}
+
 .avatar.warn{ background: linear-gradient(135deg, hsl(16, 90%, 60%) 0%, hsl(35, 95%, 55%) 100%); }
 
 .person-name{ font-weight: 900; }
@@ -746,4 +779,3 @@ input:focus, textarea:focus{
   .nav-cta{ display:none; }
   .form-row{ grid-template-columns: 1fr; }
 }
-
