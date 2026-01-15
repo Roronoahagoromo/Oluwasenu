@@ -2027,18 +2027,19 @@ textarea {
   }
 
   .navbar-toggler {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     padding: 0;
+    flex-shrink: 0;
   }
 
   .navbar-toggler-icon {
-    width: 18px;
+    width: 16px;
   }
 
   .navbar-toggler-icon::before,
   .navbar-toggler-icon::after {
-    width: 18px;
+    width: 16px;
   }
 
   .section {
@@ -2047,10 +2048,21 @@ textarea {
 
   .brand-text {
     display: block;
-    font-size: 14px;
-    max-width: none;
-    white-space: normal;
-    overflow: visible;
+    font-size: 11px;
+    max-width: calc(100vw - 120px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.3;
+  }
+
+  .brand-badge {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar-brand.brand {
+    gap: 10px;
   }
 
   .hero-headline {
@@ -2122,8 +2134,35 @@ textarea {
 
   .brand-text {
     display: block;
-    font-size: 13px;
-    max-width: none;
+    font-size: 10px;
+    max-width: calc(100vw - 100px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .brand-badge {
+    width: 36px;
+    height: 36px;
+  }
+
+  .navbar-toggler {
+    width: 32px;
+    height: 32px;
+  }
+
+  .navbar-toggler-icon {
+    width: 14px;
+  }
+
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
+    width: 14px;
+    transform: translateY(-5px);
+  }
+
+  .navbar-toggler-icon::after {
+    transform: translateY(5px);
   }
 
   .card,
