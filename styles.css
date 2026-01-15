@@ -2027,10 +2027,11 @@ textarea {
   }
 
   .navbar-toggler {
-    width: 36px;
-    height: 36px;
+    width: 16px;
+    height: 16px;
     padding: 0;
     flex-shrink: 0;
+    box-shadow: none;
   }
 
   .navbar-toggler-icon {
@@ -2147,17 +2148,18 @@ textarea {
   }
 
   .navbar-toggler {
-    width: 32px;
-    height: 32px;
+    width: 16px;
+    height: 16px;
+    box-shadow: none;
   }
 
   .navbar-toggler-icon {
-    width: 14px;
+    width: 16px;
   }
 
   .navbar-toggler-icon::before,
   .navbar-toggler-icon::after {
-    width: 14px;
+    width: 16px;
     transform: translateY(-5px);
   }
 
