@@ -1,122 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Working in Technology - Connect, Educate, Inspire. Join our community of tech professionals and students shaping the future of technology.">
+  <meta name="keywords" content="technology, conference, networking, tech professionals, students, Indianapolis">
   <title>Working in Technology</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <!-- Top Nav -->
   <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#">
-        <img class="brand-badge" src="images/logo.png" alt="WIT Brand Badge"></img>
-        <span class="brand-text">Working in Technology</span>
-      </a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand brand" href="#home">
+          <img class="brand-badge" src="images/logo.png" alt="WIT Brand Badge">
+          <span class="brand-text">Welcome to Working in Technology</span>
+        </a>
 
-      <nav class="nav-links">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#conference">Conference</a>
-        <a href="#getinvolved">Get Involved</a>
-        <a href="#team">Team</a>
-        <a href="#contact">Contact</a>
-      </nav>
+        <button class="navbar-toggler nav-burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="nav-cta">
-        <a class="btn btn-ghost" href="#login">Sign in</a>
-        <a class="btn btn-primary" href="#register">Register Now</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav nav-links ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#conference">Conference</a></li>
+            <li class="nav-item"><a class="nav-link" href="#getinvolved">Support</a></li>
+            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-cta ms-lg-3">
+
+            <a class="btn btn-primary" href="#register">Register Now</a>
+          </div>
+        </div>
       </div>
-
-      <button class="nav-burger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+    </nav>
   </header>
 
   <!-- Hero -->
   <main id="home">
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="pill">
-            <span class="dot"></span>
-            2026 Conference Registration Open!
-          </span>
+      <!-- Sophisticated Background Ornamentation -->
+      <div class="hero-fx">
+        <div class="fx-blob blob-primary"></div>
+        <div class="fx-blob blob-secondary"></div>
+        <div class="fx-blob blob-tertiary"></div>
+        <div class="fx-grid-mesh"></div>
+      </div>
 
-          <h1>
-            Welcome to <span class="accent">Working</span><br />
-            in <span class="accent">Technology</span>
-          </h1>
-
-          <p class="lead">
-            Connect, Educate, Inspire. Join our community of tech professionals and students
-            shaping the future of technology.
-          </p>
-
-          <div class="hero-meta">
-            <div class="meta-item">
-              <span class="meta-icon">📅</span>
-              <span>March 13, 2026</span>
+      <div class="container hero-inner">
+        <div class="row align-items-center">
+          <!-- Textual Hook -->
+          <div class="col-lg-6 hero-content">
+            <div class="hero-status slide-up">
+              <span class="status-dot"></span>
+              <span class="status-text">2026 REGISTRATION IS LIVE</span>
             </div>
-            <div class="meta-item">
-              <span class="meta-icon">📍</span>
-              <span>Infosys Lab, Indianapolis</span>
-            </div>
-          </div>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#register">Register for 2026 →</a>
-            <a class="btn btn-outline" href="#about">Learn More</a>
-          </div>
+            <h1 class="hero-headline slide-up">
+              The Future of <br>
+              <span class="gradient-text">Technology</span> <br>
+              <span class="outline-text">& Innovation</span>
+            </h1>
 
-          <div class="hero-badges">
-            <div class="badge">
-              <small>Professional</small>
-              <strong>$80</strong>
-            </div>
-            <div class="badge">
-              <small>Student</small>
-              <strong>$40</strong>
-            </div>
-            <div class="badge badge-warn">
-              <small id="smaller">Early Bird</small>
-              <strong>Available!</strong>
-            </div>
-          </div>
-        </div>
+            <p class="hero-description slide-up">
+              Connect with visionaries, elevate your skills, and lead the next era of technology in Indianapolis.
+            </p>
 
-        <div class="hero-art" aria-hidden="true">
-          <div class="glass-card">
-            <div class="glass-row">
-              <div class="glass-icon">⚡</div>
-              <div>
-                <div class="glass-title">Build your network</div>
-                <div class="glass-sub">Meet speakers & attendees</div>
+            <div class="hero-details slide-up">
+              <div class="detail-badge">
+                <div class="badge-icon icon-teal"><i class="bi bi-calendar3"></i></div>
+                <div class="badge-text">
+                  <small>WHEN</small>
+                  <strong>March 13, 2026</strong>
+                </div>
+              </div>
+              <div class="detail-badge">
+                <div class="badge-icon icon-orange"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="badge-text">
+                  <small>WHERE</small>
+                  <strong>Infosys Lab, Indianapolis</strong>
+                </div>
               </div>
             </div>
-            <div class="glass-row">
-              <div class="glass-icon">📝</div>
-              <div>
-                <div class="glass-title">Keynotes</div>
-                <div class="glass-sub">Practical + inspiring talks</div>
-              </div>
-            </div>
-            <div class="glass-row">
-              <div class="glass-icon">🧠</div>
-              <div>
-                <div class="glass-title">Workshops</div>
-                <div class="glass-sub">Hands-on sessions</div>
-              </div>
+
+            <div class="hero-actions slide-up">
+              <a class="btn btn-primary btn-lg" href="#register">
+                Register Now
+                <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+              <br>
+              <br>
+
+
             </div>
           </div>
-          <div class="hero-blob blob-1"></div>
-          <div class="hero-blob blob-2"></div>
+
+          <!-- Visual Hook (Interactive Dashboard) -->
+          <div class="col-lg-5 offset-lg-1 hero-visual">
+            <div class="passport-deck scale-in">
+              <!-- Tier: Professional -->
+              <div class="deck-layer layer-pro">
+                <div class="layer-glass"></div>
+                <div class="layer-header">
+                  <span class="tier-label">PROFESSIONAL</span>
+                  <i class="bi bi-cpu"></i>
+                </div>
+                <div class="layer-body">
+                  <h2 class="tier-price">$80</h2>
+                  <p class="tier-features">Full Access • Networking Lunch</p>
+                </div>
+              </div>
+
+              <!-- Tier: Student -->
+              <div class="deck-layer layer-student">
+                <div class="layer-glass"></div>
+                <div class="layer-header">
+                  <span class="tier-label">STUDENT</span>
+                  <i class="bi bi-mortarboard"></i>
+                </div>
+                <div class="layer-body">
+                  <h2 class="tier-price">$40</h2>
+                  <p class="tier-features">Valid Student ID Required</p>
+                </div>
+              </div>
+
+              <!-- Tier: Early Bird (Highlighted) -->
+              <div class="deck-layer layer-early active">
+                <div class="hologram-fx"></div>
+                <div class="layer-glass"></div>
+                <div class="layer-header">
+                  <span class="tier-label">EARLY BIRD</span>
+                  <span class="hot-badge">TOP PICK</span>
+                </div>
+                <div class="layer-body">
+                  <h2 class="tier-price">EARLY BIRD!</h2>
+                  <p class="tier-features">Limited Remaining • Claim Yours</p>
+                </div>
+                <div class="layer-footer">
+                  <span class="cta-link">SECURE TICKET <i class="bi bi-chevron-right"></i></span>
+                </div>
+              </div>
+
+              <!-- Floating Micro-Decorations -->
+              <div class="orb orb-1"></div>
+              <div class="orb orb-2"></div>
+              <div class="orb orb-3"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -124,124 +176,113 @@
     <!-- About -->
     <section id="about" class="section">
       <div class="container">
-        <div class="section-head center">
+        <div class="section-head center fade-in">
           <span class="kicker">ABOUT US</span>
           <h2>Empowering Tech Professionals Since 2008</h2>
           <p class="muted">
-            Welcome to Working in Technology strives to educate, connect, and inspire professionals and their allies working in technology. We believe in fostering an inclusive community where everyone can thrive.
+            Educate, connect, and inspire. We foster an inclusive tech community where everyone thrives.
           </p>
         </div>
 
-        <div class="card-grid-3">
-          <article class="card">
-            <div class="icon-chip"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="White" class="bi bi-people" viewBox="0 0 16 16">
-  <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
-</svg></div>
-            <h3>Connect</h3>
-            <p>
-              Build meaningful relationships with professionals, mentors, and industry 
-              leaders who
-              share your passion for technology.
-            </p>
-          </article>
+        <div class="row g-4 card-grid-3">
+          <div class="col-lg-4 col-md-6">
+            <div class="pictorial-card fade-in">
+              <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800"
+                class="card-img" alt="Professional Meeting">
+              <div class="card-overlay">
+                <h3>Connect</h3>
+                <p>Build lifelong connections with tech leaders, mentors, and innovators.</p>
+              </div>
+            </div>
+          </div>
 
-          <article class="card">
-            <div class="icon-chip"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="White" class="bi bi-lightbulb" viewBox="0 0 16 16">
-  <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
-</svg></div>
-            <h3>Educate</h3>
-            <p>
-             Access workshops, sessions, and resources designed to expand your skills and knowledge 
-             in the ever evolving tech landscape.
-            </p>
-          </article>
+          <div class="col-lg-4 col-md-6">
+            <div class="pictorial-card fade-in">
+              <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800"
+                class="card-img" alt="Professional Teaching">
+              <div class="card-overlay">
+                <h3>Educate</h3>
+                <p>Master new technologies through hands-on workshops and expert sessions.</p>
+              </div>
+            </div>
+          </div>
 
-          <article class="card">
-            <div class="icon-chip"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="White" class="bi bi-heart" viewBox="0 0 16 16">
-  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-</svg></div>
-            <h3>Inspire</h3>
-            <p>
-              Share stories, celebrate achievements, 
-              and motivate the next generation of technology leaders and innovators.
-            </p>
-          </article>
+          <div class="col-lg-4 col-md-6">
+            <div class="pictorial-card fade-in">
+              <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=800"
+                class="card-img" alt="Inspiration">
+              <div class="card-overlay">
+                <h3>Inspire</h3>
+                <p>Ignite your passion and redefine your vision for the future of tech.</p>
+              </div>
+            </div>
+          </div>
         </div>
-
-        
+      </div>
     </section>
 
     <!-- Conference -->
+    <!-- Conference -->
     <section id="conference" class="section section-soft">
       <div class="container">
-        <div class="split">
-          <div class="panel">
-            <span class="kicker">2025 CONFERENCE</span>
-            <h2>
-              Connect. Cultivate<br />
-              <span class="accent">Belong.</span>
-            </h2>
-            <p class="muted">
-              Join us for our 17th annual conference featuring inspiring speakers, hands-on workshops, and unparalleled networking opportunities.
-              This year's theme celebrates the pillars of success in today's tech landscape.
-            </p>
+        <div class="section-head center fade-in">
+          <span class="kicker">2026 CONFERENCE</span>
+          <h2>Connect. Cultivate. <span class="accent">Belong.</span></h2>
+          <p class="muted">
+            Join us for inspiring speakers, hands-on workshops, and exceptional networking.
+          </p>
+        </div>
 
-            <div class="info-list">
-              <div class="info">
-                <span class="info-dot"></span>
-                <div>
-                  <strong>March 13, 2026</strong>
-                  <div class="muted">8am - 3:30pm</div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="conference-card fade-in">
+              <div class="conference-icon">
+                <i class="bi bi-calendar-event fs-1"></i>
+              </div>
+              <h3>Event Details</h3>
+              <div class="conference-info">
+                <div class="info-row">
+                  <i class="bi bi-calendar3"></i>
+                  <div>
+                    <strong>March 13, 2026</strong>
+                    <div class="muted">8:00 AM - 3:30 PM</div>
+                  </div>
+                </div>
+                <div class="info-row">
+                  <i class="bi bi-geo-alt"></i>
+                  <div>
+                    <strong>Infosys Lab</strong>
+                    <div class="muted">Indianapolis, Indiana</div>
+                  </div>
                 </div>
               </div>
-              <div class="info">
-                <span class="info-dot"></span>
-                <div>
-                  <strong>Infosys Lab</strong>
-                  <div class="muted">Indianapolis, Indiana</div>
-                </div>
-              </div>
+
+              <a class="btn btn-primary btn-full hover-lift conference-register-btn" href="#register"
+                style="margin-top: 40px;">Register Now →</a>
             </div>
-
-            <a class="btn btn-primary" href="#register">View Full Schedule →</a>
           </div>
 
-          <div class="panel panel-white">
-            <div class="feature-row">
-              <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-mic" viewBox="0 0 16 16">
-  <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5"/>
-  <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3"/>
-</svg></div>
-              <div>
-                <h3>Keynote Speakers</h3>
-                <p class="muted">
-                  Industry leaders sharing insights on vision, innovation, and adaptability.
-                </p>
+          <div class="col-lg-6">
+            <div class="conference-card fade-in">
+              <div class="conference-icon alt">
+                <i class="bi bi-stars fs-1"></i>
               </div>
-            </div>
-
-            <div class="feature-row">
-              <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
-  <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
-</svg></div>
-              <div>
-                <h3>Breakout Sessions</h3>
-                <p class="muted">
-                  Deep dive workshops on cutting edge technologies and career development.
-                </p>
+              <h3>What to Expect</h3>
+              <div class="conference-features">
+                <div class="feature-item">
+                  <i class="bi bi-mic"></i>
+                  <span>Inspiring keynote speakers</span>
+                </div>
+                <div class="feature-item">
+                  <i class="bi bi-book"></i>
+                  <span>Hands-on breakout sessions</span>
+                </div>
+                <div class="feature-item">
+                  <i class="bi bi-people"></i>
+                  <span>Professional networking</span>
+                </div>
               </div>
-            </div>
-
-            <div class="feature-row">
-              <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
-  <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
-</svg></div>
-              <div>
-                <h3>Networking</h3>
-                <p class="muted">
-                  Connect with professionals, recruiters, and fellow tech enthusiasts.
-                </p>
-              </div>
+              <a class="btn btn-outline btn-full hover-lift" href="schedule.html">View Schedule →</a>
             </div>
           </div>
         </div>
@@ -251,117 +292,104 @@
     <!-- Get Involved / Paths -->
     <section id="getinvolved" class="section">
       <div class="container">
-        <div class="section-head center">
+        <div class="section-head center fade-in">
           <span class="kicker">GET INVOLVED</span>
           <h2>Find Your Path to <span class="accent">Impact</span></h2>
           <p class="muted">
-            Whether you’re a seasoned professional, ambitious student, or passionate volunteer,
-            there’s a place for you in our community.
+            Join our community as a professional, student, or volunteer.
           </p>
         </div>
 
-        <div class="card-grid-3">
-          <article class="card card-big">
-            <div class="icon-chip alt"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="White" class="bi bi-briefcase" viewBox="0 0 16 16">
-  <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
-</svg></div>
-            <h3>Professionals</h3>
-            <p>
-             Share your expertise, mentor the next generation, and expand your network.
-            Speak at our conference, sponsor events, or join our board.
-            </p>
-            <ul class="bullets">
-              <li>Speaking Opportunities</li>
-              <li>Sponsorship Packages</li>
-              <li>Board Positions</li>
-            </ul>
-            <a class="btn btn-outline btn-full" href="#">Explore Professional Opportunities →</a>
-          </article>
+        <div class="row g-4 card-grid-3">
+          <div class="col-lg-4 col-md-6">
+            <div class="support-card fade-in">
+              <div class="icon-shield"><i class="bi bi-briefcase"></i></div>
+              <h3>Professionals</h3>
+              <p class="support-desc">
+                Share your expertise, mentor the next generation, and expand your reach across the Indianapolis tech
+                ecosystem.
+              </p>
+              <ul class="support-features">
+                <li>Speaking Opportunities</li>
+                <li>Sponsorship Packages</li>
+                <li>Board Positions</li>
+              </ul>
+              <a class="btn btn-primary" href="#">Explore Opportunities <i class="bi bi-arrow-right ms-1"></i></a>
+            </div>
+          </div>
 
-          <article class="card card-big">
-            <div class="icon-chip warn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="White" class="bi bi-mortarboard" viewBox="0 0 16 16">
-  <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
-  <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
-</svg></div>
-            <h3>Students</h3>
-            <p>
-             Launch your tech career with exclusive access to industry professionals,and internship opportunities 
-             designed to help you gain practical skills and insights.
-            </p>
-            <ul class="bullets">
-              <li>Discounted Conference Tickets</li>
-              <li>Career Workshops</li>
-              <li>Mentorship Programs</li>
-            </ul>
-            <a class="btn btn-outline btn-full" href="#">Sponsor Students →</a>
-          </article>
+          <div class="col-lg-4 col-md-6">
+            <div class="support-card fade-in">
+              <div class="icon-shield shadow-sm"><i class="bi bi-mortarboard"></i></div>
+              <h3>Students</h3>
+              <p class="support-desc">
+                Kickstart your career with exclusive access to industry giants and specialized student programs.
+              </p>
+              <ul class="support-features">
+                <li>Discounted Tickets</li>
+                <li>Career Workshops</li>
+                <li>Mentorship Access</li>
+              </ul>
+              <a class="btn btn-outline" href="#">Sponsor Students <i class="bi bi-arrow-right ms-1"></i></a>
+            </div>
+          </div>
 
-          <article class="card card-big">
-            <div class="icon-chip ok"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart" viewBox="0 0 16 16">
-  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-</svg></div>
-            <h3>Volunteers</h3>
-            <p>
-              Be part of the team that makes it all happen.
-              Gain experience, build connections, and give back to the community.
-            </p>
-            <ul class="bullets">
-              <li>Event Planning</li>
-              <li>Social Media Team</li>
-              <li>Day of Support </li>
-            </ul>
-            <a class="btn btn-outline btn-full" href="#">Join Our Team →</a>
-          </article>
+          <div class="col-lg-4 col-md-6">
+            <div class="support-card fade-in">
+              <div class="icon-shield"><i class="bi bi-heart-fill"></i></div>
+              <h3>Volunteers</h3>
+              <p class="support-desc">
+                Join our mission-driven team, build valuable experience, and help us scale our community impact.
+              </p>
+              <ul class="support-features">
+                <li>Event Planning</li>
+                <li>Social Media Team</li>
+                <li>Day-of Operations</li>
+              </ul>
+              <a class="btn btn-outline" href="#">Join the Team <i class="bi bi-arrow-right ms-1"></i></a>
+            </div>
+          </div>
         </div>
 
-        <div class="logos">
+        <div class="logos fade-in">
           <div class="logos-head">
             <span class="kicker">OUR PARTNERS</span>
             <h3>Trusted by Leading Organizations</h3>
           </div>
 
-          <div class="logo-strip">
-  <div class="partner-logo">
-    <img src="images/1.png" alt="Innovate & Co logo">
-  </div>
-  <div class="partner-logo">
-    <img src="images/2.png" alt="PayUp logo">
-  </div>
-  <div class="partner-logo">
-    <img src="images/3.png" alt="Innovate & Co logo">
-  </div>
-  <div class="partner-logo">
-    <img src="images/4.png" alt="Innovate & Co logo">
-  </div>
-  <div class="partner-logo">
-    <img src="images/5.png" alt="Innovate & Co logo">
-  </div>
-  <div class="partner-logo">
-    <img src="images/6.png" alt="Innovate & Co logo">
-  </div>
-  <div class="partner-logo">
-    <img src="images/7.png" alt="Innovate & Co logo">
-  </div>
-  <div class="partner-logo">
-    <img src="images/8.png" alt="Innovate & Co logo">
-  </div>
-  <div class="partner-logo">
-    <img src="images/9.png" alt="Innovate & Co logo">
-  </div>
-  <div class="partner-logo">
-    <img src="images/10.png" alt="Innovate & Co logo">
-  </div>
-  <div class="partner-logo">
-    <img src="images/11.png" alt="Innovate & Co logo">
-  </div>
-  <div class="partner-logo">
-    <img src="images/12.png" alt="Innovate & Co logo">
-  </div>
-  <div class="partner-logo">
-    <img src="images/13.png" alt="Innovate & Co logo">
-  </div>
-</div>
-
+          <div class="logo-slider">
+            <div class="logo-strip">
+              <div class="partner-logo"><img src="images/1.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/2.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/3.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/4.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/5.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/6.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/7.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/8.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/9.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/10.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/11.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/12.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/13.png" alt="Partner logo" loading="lazy"></div>
+            </div>
+            <!-- Duplicated Strip for Infinite Loop -->
+            <div class="logo-strip" aria-hidden="true">
+              <div class="partner-logo"><img src="images/1.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/2.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/3.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/4.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/5.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/6.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/7.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/8.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/9.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/10.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/11.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/12.png" alt="Partner logo" loading="lazy"></div>
+              <div class="partner-logo"><img src="images/13.png" alt="Partner logo" loading="lazy"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -369,327 +397,440 @@
     <!-- Team -->
     <section id="team" class="section section-soft">
       <div class="container">
-        <div class="section-head center">
+        <div class="section-head center fade-in">
           <span class="kicker">OUR TEAM</span>
           <h2>Meet the People Behind WWiT</h2>
-          <p class="muted">A dedicated group of professionals and students working together to make our community thrive.</p>
+          <p class="muted">A dedicated group of professionals and students working together to make our community
+            thrive.</p>
         </div>
 
-         <h3 class="subhead">CICS TEAM</h3>
-        <div class="team-grid">
-          
-         <div class="person">
-  <div class="avatar">
-    <img src="images/sonya.jpg" alt="Sonya Ohanian">
-  </div>
-  <div class="person-name">Sonya Chapin</div>
-  <div class="person-role">CICS TEAM</div>
-</div>
-         
-<div class="person">
-  <div class="avatar">
-    <img src="images/alissa.png" alt="Alissa Brainard">
-  </div>
-  <div class="person-name">Alissa Brainard</div>
-  <div class="person-role">CICS TEAM</div>
-</div>
-
-<div class="person">
-  <div class="avatar">
-    <img src="images/chris.png" alt="Chris Davison">
-  </div>
-  <div class="person-name">Chris Davison</div>
-  <div class="person-role">CICS TEAM</div>
-</div>
-
-        </div>
-
-
-        <h3 class="subhead">Board Members</h3>
-        <div class="team-grid">
-          
-         <div class="person">
-  <div class="avatar">
-    <img src="images/sonya.jpg" alt="Sonya Ohanian">
-  </div>
-  <div class="person-name">Sonya Chapin</div>
-  <div class="person-role">Board Member</div>
-</div>
-
-               <div class="person">
-  <div class="avatar">
-    <img src="images/chelsea.png" alt="Chelsea Holmes Matz">
-  </div>
-  <div class="person-name">Chelsea Holmes Matz</div>
-  <div class="person-role">Board Member</div>
-</div>
-              <div class="person">
-  <div class="avatar">
-    <img src="images/fateemah.png" alt="Fatemeh Hajizadeh">
-  </div>
-  <div class="person-name">Fatemeh Hajizadeh</div>
-  <div class="person-role">Board Member</div>
-</div>
-               <div class="person">
-  <div class="avatar">
-    <img src="images/kim.png" alt="Kim Richman">
-  </div>
-  <div class="person-name">Kim Richman</div>
-  <div class="person-role">Board Member</div>
-</div>
-               <div class="person">
-  <div class="avatar">
-    <img src="images/krista.png" alt="Krista Ewing">
-  </div>
-  <div class="person-name">Krista Ewing</div>
-  <div class="person-role">Board Member</div>
-</div>
-               <div class="person">
-  <div class="avatar">
-    <img src="images/alexandra.png" alt="Krista Ewing">
-  </div>
-  <div class="person-name">Alexandra Smedley</div>
-  <div class="person-role">Board Member</div>
-</div>
-
- <div class="person">
-  <div class="avatar">
-    <img src="images/zoey spengler.png" alt="Krista Ewing">
-  </div>
-  <div class="person-name">Zoey Spengler</div>
-  <div class="person-role">Board Member</div>
-</div>
-
- <div class="person">
-  <div class="avatar">
-    <img src="images/konnor.png" alt="Krista Ewing">
-  </div>
-  <div class="person-name">Konnor Miller</div>
-  <div class="person-role">Board Member</div>
-</div>
-
-
- <div class="person">
-  <div class="avatar">
-    <img src="images/kirsten.png" alt="Krista Ewing">
-  </div>
-  <div class="person-name">Kirsten Smith</div>
-  <div class="person-role">Board Member</div>
-</div>
-
-               <div class="person">
-  <div class="avatar">
-    <img src="images/adrienne.png" alt="Adrienne Heckler">
-  </div>
-  <div class="person-name">Adrienne Heckler</div>
-  <div class="person-role">Board Member</div>
-</div>
-          <div class="person">
-            <div class="avatar">
-              <img src="images/claudia.png" alt="Claudia Metzger">
+        <h3 class="subhead fade-in">CICS TEAM</h3>
+        <div class="row g-3 team-grid">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar">
+                <img src="images/sonya.jpg" alt="Sonya Chapin" loading="lazy">
+              </div>
+              <div class="person-name">Sonya Chapin</div>
+              <div class="person-role">CICS TEAM</div>
             </div>
-            <div class="person-name">Claudia Metzger</div>
-            <div class="person-role">Board Member</div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar">
+                <img src="images/alissa.png" alt="Alissa Brainard" loading="lazy">
+              </div>
+              <div class="person-name">Alissa Brainard</div>
+              <div class="person-role">CICS TEAM</div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar">
+                <img src="images/chris.png" alt="Chris Davison" loading="lazy">
+              </div>
+              <div class="person-name">Chris Davison</div>
+              <div class="person-role">CICS TEAM</div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <h3 class="subhead fade-in">Board Members</h3>
+        <div class="row g-3 team-grid">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar">
+                <img src="images/sonya.jpg" alt="Sonya Chapin" loading="lazy">
+              </div>
+              <div class="person-name">Sonya Chapin</div>
+              <div class="person-role">Board Member</div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar">
+                <img src="images/chelsea.png" alt="Chelsea Holmes Matz" loading="lazy">
+              </div>
+              <div class="person-name">Chelsea Holmes Matz</div>
+              <div class="person-role">Board Member</div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar">
+                <img src="images/fateemah.png" alt="Fatemeh Hajizadeh" loading="lazy">
+              </div>
+              <div class="person-name">Fatemeh Hajizadeh</div>
+              <div class="person-role">Board Member</div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar">
+                <img src="images/kim.png" alt="Kim Richman" loading="lazy">
+              </div>
+              <div class="person-name">Kim Richman</div>
+              <div class="person-role">Board Member</div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar">
+                <img src="images/krista.png" alt="Krista Ewing" loading="lazy">
+              </div>
+              <div class="person-name">Krista Ewing</div>
+              <div class="person-role">Board Member</div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar">
+                <img src="images/alexandra.png" alt="Alexandra Smedley" loading="lazy">
+              </div>
+              <div class="person-name">Alexandra Smedley</div>
+              <div class="person-role">Board Member</div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar">
+                <img src="images/zoey spengler.png" alt="Zoey Spengler" loading="lazy">
+              </div>
+              <div class="person-name">Zoey Spengler</div>
+              <div class="person-role">Board Member</div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar">
+                <img src="images/konnor.png" alt="Konnor Miller" loading="lazy">
+              </div>
+              <div class="person-name">Konnor Miller</div>
+              <div class="person-role">Board Member</div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar">
+                <img src="images/kirsten.png" alt="Kirsten Smith" loading="lazy">
+              </div>
+              <div class="person-name">Kirsten Smith</div>
+              <div class="person-role">Board Member</div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar">
+                <img src="images/adrienne.png" alt="Adrienne Heckler" loading="lazy">
+              </div>
+              <div class="person-name">Adrienne Heckler</div>
+              <div class="person-role">Board Member</div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar">
+                <img src="images/claudia.png" alt="Claudia Metzger" loading="lazy">
+              </div>
+              <div class="person-name">Claudia Metzger</div>
+              <div class="person-role">Board Member</div>
+            </div>
           </div>
         </div>
 
-        <h3 class="subhead">Student Lead Team</h3>
-        <div class="team-grid team-grid-small">
-          <div class="person">
-            <div class="avatar warn">AD</div>
-            <div class="person-name">Andrew Dudelston</div>
-            <div class="person-role">Graduate Assistant</div>
+        <br>
+        <br>
+
+        <h3 class="subhead fade-in">Student Lead Team</h3>
+        <div class="row g-3 team-grid-small">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar warn">AD</div>
+              <div class="person-name">Andrew Dudelston</div>
+              <div class="person-role">Graduate Assistant</div>
+            </div>
           </div>
-          <div class="person">
-            <div class="avatar warn">OA</div>
-            <div class="person-name">Oluwaseni Adeyinka</div>
-            <div class="person-role">Student Lead</div>
+
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar warn">OA</div>
+              <div class="person-name">Oluwaseni Adeyinka</div>
+              <div class="person-role">Student Lead</div>
+            </div>
           </div>
-          <div class="person">
-            <div class="avatar warn">BM</div>
-            <div class="person-name">Byron Mutimusakwa</div>
-            <div class="person-role">Student Lead</div>
+
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar warn">BM</div>
+              <div class="person-name">Byron Mutimusakwa</div>
+              <div class="person-role">Student Lead</div>
+            </div>
           </div>
-          <div class="person">
-            <div class="avatar warn">RA</div>
-            <div class="person-name">Racheal Arkorful</div>
-            <div class="person-role">Student Lead</div>
+
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar warn">RA</div>
+              <div class="person-name">Racheal Arkorful</div>
+              <div class="person-role">Student Lead</div>
+            </div>
           </div>
-          <div class="person">
-            <div class="avatar warn">RA</div>
-            <div class="person-name">Racheal Ankunda</div>
-            <div class="person-role">Student Lead</div>
+
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar warn">RA</div>
+              <div class="person-name">Racheal Ankunda</div>
+              <div class="person-role">Student Lead</div>
+            </div>
           </div>
-          <div class="person">
-            <div class="avatar warn">OK</div>
-            <div class="person-name">Oghenemarho Kaieren</div>
-            <div class="person-role">Student Lead</div>
+
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar warn">OK</div>
+              <div class="person-name">Oghenemarho Kaieren</div>
+              <div class="person-role">Student Lead</div>
+            </div>
           </div>
-          <div class="person">
-            <div class="avatar warn">RA</div>
-            <div class="person-name">Kehinde Akinwolere</div>
-            <div class="person-role">Student Lead</div>
+
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar warn">KA</div>
+              <div class="person-name">Kehinde Akinwolere</div>
+              <div class="person-role">Student Lead</div>
+            </div>
           </div>
-          <div class="person">
-            <div class="avatar warn">JP</div>
-            <div class="person-name">Josh Pavlovsky</div>
-            <div class="person-role">Student Lead</div>
+
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar warn">JP</div>
+              <div class="person-name">Josh Pavlovsky</div>
+              <div class="person-role">Student Lead</div>
+            </div>
           </div>
-          <div class="person">
-            <div class="avatar warn">EH</div>
-            <div class="person-name">Eden Hathaway</div>
-            <div class="person-role">Student Lead</div>
+
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar warn">EH</div>
+              <div class="person-name">Eden Hathaway</div>
+              <div class="person-role">Student Lead</div>
+            </div>
           </div>
-          <div class="person">
-            <div class="avatar warn">BK</div>
-            <div class="person-name">Benjamin Konnor</div>
-            <div class="person-role">Student Lead</div>
+
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar warn">BK</div>
+              <div class="person-name">Benjamin Konnor</div>
+              <div class="person-role">Student Lead</div>
+            </div>
           </div>
-          <div class="person">
-            <div class="avatar warn">ABS</div>
-            <div class="person-name">Ambrose Barrymore-Sackey</div>
-            <div class="person-role">Student Lead</div>
+
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar warn">ABS</div>
+              <div class="person-name">Ambrose Barrymore-Sackey</div>
+              <div class="person-role">Student Lead</div>
+            </div>
           </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+            <div class="person hover-lift fade-in">
+              <div class="avatar warn">FD</div>
+              <div class="person-name">Frederick Da-silveira</div>
+              <div class="person-role">Student Lead</div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="section">
       <div class="container">
-        <div class="section-head left">
+        <div class="section-head left fade-in">
           <span class="kicker">CONTACT US</span>
-          <h2>Let’s Connect</h2>
+          <h2>Let's Connect</h2>
           <p>Have questions about our conference,
-           partnership opportunities, or getting involved? We'd love to hear from you.</p>
+            partnership opportunities, or getting involved? We'd love to hear from you.</p>
         </div>
 
-        <div class="contact-split">
-          <div class="contact-card">
-            <h3>Contact Info</h3>
-            <div class="contact-item">
-              <span class="contact-ico"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="teal" class="bi bi-telephone" viewBox="0 0 16 16">
-  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-</svg></span>
-              <div>
-                <small>Phone</small><br>
-                <strong>130-568-527</strong>
+        <div class="row g-4 contact-split">
+          <div class="col-lg-5">
+            <div class="contact-card fade-in">
+              <h3>Contact Info</h3>
+              <div class="contact-item">
+                <span class="contact-ico">
+                  <i class="bi bi-telephone fs-5"></i>
+                </span>
+                <div>
+                  <small>Phone</small><br>
+                  <strong>765-285-1889</strong>
+                </div>
               </div>
-            </div>
-            <div class="contact-item">
-              <span class="contact-ico"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="teal" class="bi bi-envelope" viewBox="0 0 16 16">
-  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-</svg></span>
-              <div>
-                <small>Email</small><br>
-                <strong>info@workingintech.org</strong>
+              <div class="contact-item">
+                <span class="contact-ico">
+                  <i class="bi bi-envelope fs-5"></i>
+                </span>
+                <div>
+                  <small>Email</small><br>
+                  <strong>info@welcometoworkingintech.org</strong>
+                </div>
               </div>
-            </div>
-            <div class="contact-item">
-              <span class="contact-ico"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="teal" class="bi bi-geo" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"/>
-</svg></span>
-              <div>
-                <small>Location</small><br>
-                <strong>Ball State University, Indiana</strong>
+              <div class="contact-item">
+                <span class="contact-ico">
+                  <i class="bi bi-geo fs-5"></i>
+                </span>
+                <div>
+                  <small>Location</small><br>
+                  <strong>Ball State University, Muncie, Indiana</strong>
+                </div>
               </div>
-            </div>
 
-            <div class="social">
-              <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-</svg></a>
-              <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-</svg></a>
+              <div class="social">
+                <a href="#" aria-label="Facebook" class="hover-lift">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" aria-label="Instagram" class="hover-lift">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn" class="hover-lift">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
             </div>
           </div>
 
-          <form class="form-card">
-            <h3>Send a Message</h3>
+          <div class="col-lg-7">
+            <form class="form-card fade-in">
+              <h3>Send a Message</h3>
 
-            <div class="form-row">
-              <div class="field">
-                <label>First Name</label>
-                <input type="text" placeholder="John" />
+              <div class="row g-3 form-row">
+                <div class="col-md-6">
+                  <div class="field">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" class="form-control" placeholder="John" required />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="field">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" class="form-control" placeholder="Doe" required />
+                  </div>
+                </div>
               </div>
+
               <div class="field">
-                <label>Last Name</label>
-                <input type="text" placeholder="Doe" />
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="john@example.com" required />
               </div>
-            </div>
 
-            <div class="field">
-              <label>Email</label>
-              <input type="email" placeholder="john@example.com" />
-            </div>
-
-            <div class="field">
-              <label>Message</label>
-              <textarea rows="5" placeholder="How can we help you?"></textarea>
-            </div>
-
-            <button class="btn btn-primary btn-full" type="submit">Send Message →</button>
-          </form>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" class="form-control" placeholder="How can we help you?"
+                  required></textarea>
+              </div>
+              <br>
+              <button class="btn btn-primary btn-full hover-lift" type="submit">Send Message →</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-
+  <!-- Footer -->
   <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <div class="brand footer-brand-row">
-          <span class="brand-badge">W</span>
-          <span class="brand-text">Welcome To Working in Technology</span>
+    <div class="container">
+      <div class="row footer-grid g-4">
+        <div class="col-lg-5">
+          <div class="footer-brand">
+            <div class="brand footer-brand-row">
+              <img class="brand-badge" src="images/logo.png" alt="WIT Brand Badge">
+              <span class="brand-text">Welcome To Working in Technology</span>
+            </div>
+            <p class="muted">
+              Connecting, educating, and inspiring tech professionals since 2008.
+              Join our community and shape the future of technology.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="Twitter" class="hover-lift">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+              <a href="#" aria-label="LinkedIn" class="hover-lift">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="#" aria-label="Instagram" class="hover-lift">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <p class="muted">
-          Connecting, educating, and inspiring tech professionals since 2008.
-          Join our community and shape the future of technology.
-        </p>
-        <div class="footer-social">
-          <a href="#" aria-label="Twitter">𝕏</a>
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="Instagram">◎</a>
+
+        <div class="col-lg-7">
+          <div class="row footer-cols g-4">
+            <div class="col-md-4">
+              <div class="footer-col">
+                <h4>Conference</h4>
+                <a href="#">2026 Conference</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="#">Speakers</a>
+                <a href="#">Sponsors</a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="footer-col">
+                <h4>Get Involved</h4>
+                <a href="#">Professionals</a>
+                <a href="#">Students</a>
+                <a href="#">Volunteers</a>
+                <a href="#">Partnerships</a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="footer-col">
+                <h4>Resources</h4>
+                <a href="#">IT Workshops</a>
+                <a href="#">Downloads</a>
+                <a href="#">Past Conference</a>
+                <a href="#">FAQ</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="footer-cols">
-        <div class="footer-col">
-          <h4>Conference</h4>
-          <a href="#">2025 Conference</a>
-          <a href="#">Schedule</a>
-          <a href="#">Speakers</a>
-          <a href="#">Sponsors</a>
+      <div class="footer-bottom">
+        <small style="color: white;">© 2026 Working in Technology. All rights reserved.</small>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
         </div>
-
-        <div class="footer-col">
-          <h4>Get Involved</h4>
-          <a href="#">Professionals</a>
-          <a href="#">Students</a>
-          <a href="#">Volunteers</a>
-          <a href="#">Partnerships</a>
-        </div>
-
-        <div class="footer-col">
-          <h4>Resources</h4>
-          <a href="#">IT Workshops</a>
-          <a href="#">Downloads</a>
-          <a href="#">Past Conference</a>
-          <a href="#">FAQ</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="container footer-bottom">
-      <small>© 2026 Welcome to Working in Technology. All rights reserved.</small>
-      <div class="footer-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
       </div>
     </div>
   </footer>
 
-</body>
-</html>
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
 
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
