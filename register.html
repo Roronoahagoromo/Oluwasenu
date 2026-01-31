@@ -1,0 +1,452 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | Welcome to Working in Technology</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .pricing-card {
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            background: #fff;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing-header {
+            padding: 2.5rem 2rem;
+            position: relative;
+            color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            margin-bottom: 2rem;
+        }
+
+        .pricing-card.student .pricing-header {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+
+        .pricing-card.nonprofit .pricing-header {
+            background: linear-gradient(135deg, #18b7ad 0%, #0f766e 100%);
+        }
+
+        .pricing-card.pro .pricing-header {
+            background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+        }
+
+        .price-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            backdrop-filter: blur(5px);
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-content {
+            padding: 0 2rem 2.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .waiver-box {
+            background-color: #f8fafc;
+            border-left: 5px solid var(--accent);
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" alt="WIT Logo">
+                <span class="d-none d-sm-inline-block fw-bold text-dark">Welcome to Working in Technology</span>
+                <span class="d-sm-none fw-bold text-dark">WWiT</span>
+            </a>
+            <button class="navbar-toggler collapsed border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#conference">Conference</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#getinvolved">Get Involved</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="d-flex ms-lg-3">
+                    <a href="https://commerce.cashnet.com/BALL_EMS044"
+                        class="btn btn-primary text-white conditional-buy-btn">Buy Tickets
+                        Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="hero-section py-5 bg-light" style="padding-top: 8rem !important; padding-bottom: 4rem !important;">
+        <div class="hero-mesh-bg" style="opacity: 0.5;"></div>
+        <div class="container position-relative z-index-2 text-center">
+            <div class="hero-badge mx-auto">
+                <span class="dot"></span>
+                Join Us March 13th
+            </div>
+            <h1 class="display-4 fw-black mb-3">REGISTRATION <span class="text-gradient">Details</span></h1>
+            <p class="lead text-muted mx-auto mb-5" style="max-width: 800px;">
+                We look forward to seeing you on Friday, March 13th.<br>
+                The conference is on Friday, March 13th. Regular registration closes on Monday, March 9th at midnight.
+            </p>
+
+            <a href="https://commerce.cashnet.com/BALL_EMS044"
+                class="btn btn-primary btn-lg text-white shadow-lg px-5 py-3 rounded-pill conditional-buy-btn">
+                Buy Tickets Now <i class="fa-solid fa-ticket ms-2"></i>
+            </a>
+
+            <div class="mt-4 text-muted small">
+                <i class="fa-regular fa-clock me-2"></i>Early bird rate listed is good through 5 pm, March 1st.
+            </div>
+            <div class="mt-2 text-muted small">
+                <i class="fa-solid fa-users me-2"></i>Interested in a group rate (5 or more)? Contact <a
+                    href="mailto:sonya.chapin@bsu.edu"
+                    class="text-primary text-decoration-underline">sonya.chapin@bsu.edu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <!-- Card 1: Students -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-card student">
+                        <div class="pricing-header">
+                            <span class="price-badge">Discounted</span>
+                            <h3 class="fw-bold fs-2 mb-0"><i class="fa-solid fa-graduation-cap me-2"></i>Students</h3>
+                        </div>
+                        <div class="pricing-content">
+                            <ul class="list-unstyled mb-4">
+                                <li class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="text-secondary fw-medium">Early Bird</span>
+                                    <span class="fs-4 fw-bold text-dark">$20</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <span class="text-secondary fw-medium">Regular</span>
+                                    <span class="fs-4 fw-bold text-dark">$40</span>
+                                </li>
+                            </ul>
+                            <p class="text-muted small mt-auto text-center fst-italic">Valid student ID required at
+                                check-in.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Non-Profits -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-card nonprofit" style="scale: 1.05; z-index: 2;">
+                        <div class="pricing-header">
+                            <span class="price-badge">Non-Profit / Education</span>
+                            <h3 class="fw-bold fs-2 mb-0"><i class="fa-solid fa-hand-holding-heart me-2"></i>Partners
+                            </h3>
+                        </div>
+                        <div class="pricing-content">
+                            <div class="text-center mb-3">
+                                <span class="d-block text-secondary small fw-bold text-uppercase">Non-Profits & BSU
+                                    Employees</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="text-secondary fw-medium">Early Bird</span>
+                                    <span class="fs-4 fw-bold text-dark">$50</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <span class="text-secondary fw-medium">Regular</span>
+                                    <span class="fs-4 fw-bold text-dark">$60</span>
+                                </li>
+                            </ul>
+                            <p class="text-muted small mt-auto text-center fst-italic">For employees of non-profit orgs
+                                and Ball State University.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Professionals -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-card pro">
+                        <div class="pricing-header">
+                            <span class="price-badge">General Admission</span>
+                            <h3 class="fw-bold fs-2 mb-0"><i class="fa-solid fa-briefcase me-2"></i>Standard</h3>
+                        </div>
+                        <div class="pricing-content">
+                            <ul class="list-unstyled mb-4">
+                                <li class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="text-secondary fw-medium">Early Bird</span>
+                                    <span class="fs-4 fw-bold text-dark">$70</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <span class="text-secondary fw-medium">Regular</span>
+                                    <span class="fs-4 fw-bold text-dark">$80</span>
+                                </li>
+                            </ul>
+                            <p class="text-muted small mt-auto text-center fst-italic">Full access to all sessions and
+                                networking events.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waiver Section -->
+    <section class="py-5 bg-white" id="waiverSection">
+        <div class="container">
+            <div class="waiver-box mx-auto shadow-sm" style="max-width: 900px;" data-aos="fade-up">
+                <div class="d-flex align-items-start gap-3 mb-4">
+                    <div class="icon-box-sm bg-warning bg-opacity-10 text-warning rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                        style="width: 50px; height: 50px; font-size: 1.5rem;">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <div>
+                        <h4 class="fw-bold mb-1">Important: Liability Waiver</h4>
+                        <p class="text-secondary mb-0">Please read before registering.</p>
+                    </div>
+                </div>
+
+                <div class="text-secondary small leading-relaxed" style="line-height: 1.8;">
+                    <p>Our hosts at Infosys are thrilled to welcome us to their offices for the 2025 WWiT conference! In
+                        our commitment to ensuring a safe and enjoyable experience for everyone, we kindly ask that you
+                        complete a liability waiver when you arrive.</p>
+                    <p class="fw-bold text-dark">By checking this box (on the registration form), you understand and
+                        acknowledge that your participation in this event requires you to sign a hard copy release to be
+                        submitted upon entering the Infosys building, which releases Infosys of any liability for any
+                        incidents that may occur at the WWiT Conference on March 13th, 2026.</p>
+                    <p>I know this sounds ominous, but this document is a standard requirement for the use of the venue
+                        and helps maintain a secure environment for all participants.</p>
+                    <p>Your cooperation in completing the waiver is greatly appreciated, and we want to emphasize that
+                        this is a routine procedure. If you have any questions or concerns, feel free to reach out to
+                        our team. We look forward to hosting you and creating wonderful memories together!</p>
+                </div>
+
+                <div class="mt-4 mb-4 text-start bg-white p-3 rounded-3 border">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="waiverCheck">
+                        <label class="form-check-label fw-bold" for="waiverCheck">
+                            I have read and agree to the Liability Waiver terms above.
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mt-4 text-center">
+                    <a href="https://commerce.cashnet.com/BALL_EMS044" id="buyTicketsBtn"
+                        class="btn btn-primary btn-lg text-white shadow-lg px-5 py-3 rounded-pill disabled"
+                        aria-disabled="true">
+                        Buy Tickets Now <i class="fa-solid fa-arrow-right ms-2"></i>
+                    </a>
+                    <p class="text-danger small mt-2 d-none" id="waiverAlert">Please accept the waiver to proceed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3 text-white fw-bold fs-5">
+                        <img src="images/logo.png" alt="WWiT Logo" style="height: 50px; border-radius: 8px;">
+                        <span>Welcome to Working in Technology</span>
+                    </div>
+                    <p class="text-secondary small mb-4">
+                        Connecting, educating, and inspiring tech professionals since 2008.
+                        Join our community and shape the future of technology.
+                    </p>
+                    <div>
+                        <a href="#" class="footer-social-icon" title="Facebook"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-icon" title="LinkedIn"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="footer-social-icon" title="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer-social-icon" title="X (Twitter)"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5>Conference</h5>
+                    <a href="index.html#conference">2026 Conference</a>
+                    <a href="schedule.html">Schedule</a>
+                    <a href="speakers.html">Speakers</a>
+                    <a href="opportunities.html">Sponsorship</a>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5>Get Involved</h5>
+                    <a href="opportunities.html">Professionals</a>
+                    <a href="student-sponsorship.html">Students</a>
+                    <a href="join-team.html">Volunteers</a>
+                    <a href="partnerships.html">Partnerships</a>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <h5>Resources</h5>
+                    <a href="#">Past Conference</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+            <div
+                class="border-top border-secondary border-opacity-25 mt-5 pt-4 d-flex flex-wrap justify-content-between align-items-center">
+                <small class="text-secondary">© 2026 Welcome to Working in Technology. All rights reserved.</small>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-secondary small">Privacy Policy</a>
+                    <a href="#" class="text-secondary small">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Animations
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                document.getElementById('mainNav').classList.add('scrolled');
+            } else {
+                document.getElementById('mainNav').classList.remove('scrolled');
+            }
+        });
+
+        // Auto-collapse navbar on click (mobile)
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navbarCollapse = document.getElementById('navbarContent');
+                if (navbarCollapse.classList.contains('show')) {
+                    const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                        toggle: true
+                    });
+                }
+            });
+        });
+
+        // Waiver Checkbox Validation
+        const waiverCheck = document.getElementById('waiverCheck');
+        const buyBtn = document.getElementById('buyTicketsBtn');
+        const waiverAlert = document.getElementById('waiverAlert');
+        const waiverSection = document.getElementById('waiverSection');
+
+        waiverCheck.addEventListener('change', function () {
+            if (this.checked) {
+                buyBtn.classList.remove('disabled');
+                buyBtn.setAttribute('aria-disabled', 'false');
+                waiverAlert.classList.add('d-none');
+            } else {
+                buyBtn.classList.add('disabled');
+                buyBtn.setAttribute('aria-disabled', 'true');
+            }
+        });
+
+        // Optional: Alert if clicking disabled button (handled by CSS pointer-events none usually, but extra UX)
+        buyBtn.addEventListener('click', function (e) {
+            if (this.classList.contains('disabled')) {
+                e.preventDefault();
+                waiverAlert.classList.remove('d-none');
+            }
+        });
+
+        // Loop through all top "Buy Tickets" buttons
+        document.querySelectorAll('.conditional-buy-btn').forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                // If waiver is not checked, verify by scrolling to it
+                if (!waiverCheck.checked) {
+                    e.preventDefault();
+                    waiverSection.scrollIntoView({ behavior: 'smooth' });
+
+                    // Add some attention-grabbing effect
+                    setTimeout(() => {
+                        waiverAlert.classList.remove('d-none');
+                        // Highlight the box briefly
+                        const formCheck = waiverCheck.closest('.bg-white');
+                        formCheck.classList.add('border-danger', 'border-2');
+                        setTimeout(() => {
+                            formCheck.classList.remove('border-danger', 'border-2');
+                        }, 2000);
+                    }, 800); // Wait for scroll roughly
+                }
+            });
+        });
+
+        // Scroll to Top Button
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollToTopBtn = document.getElementById('scrollToTop');
+            
+            if (scrollToTopBtn) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 300) {
+                        scrollToTopBtn.classList.add('visible');
+                    } else {
+                        scrollToTopBtn.classList.remove('visible');
+                    }
+                });
+
+                scrollToTopBtn.addEventListener('click', () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+</body>
+
+</html>

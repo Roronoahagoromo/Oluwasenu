@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Button Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .test-content {
+            height: 2000px;
+            padding: 2rem;
+            background: linear-gradient(to bottom, #f8fafc, #e0fbf9);
+        }
+        .marker {
+            background: #18b7ad;
+            color: white;
+            padding: 1rem;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-content">
+        <h1>Scroll Button Test Page</h1>
+        <div class="marker">Start - Scroll down 300px to see the button</div>
+        <div class="marker" style="margin-top: 350px;">300px mark - Button should appear now!</div>
+        <div class="marker" style="margin-top: 500px;">Keep scrolling to test...</div>
+        <div class="marker" style="margin-top: 500px;">Click the button to scroll back to top</div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Debug logging
+        console.log('Script started');
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        console.log('Button element:', scrollToTopBtn);
+        console.log('Button computed styles:', window.getComputedStyle(scrollToTopBtn));
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            console.log('Scroll Y:', scrollY);
+
+            if (scrollY > 300) {
+                scrollToTopBtn.classList.add('visible');
+                console.log('Added visible class');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+                console.log('Removed visible class');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            console.log('Button clicked');
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Force show button for testing
+        setTimeout(() => {
+            console.log('Force showing button for 3 seconds');
+            scrollToTopBtn.style.opacity = '1';
+            scrollToTopBtn.style.visibility = 'visible';
+            scrollToTopBtn.style.transform = 'translateY(0)';
+
+            setTimeout(() => {
+                scrollToTopBtn.style.opacity = '';
+                scrollToTopBtn.style.visibility = '';
+                scrollToTopBtn.style.transform = '';
+                console.log('Reset to normal behavior');
+            }, 3000);
+        }, 1000);
+    </script>
+</body>
+</html>
