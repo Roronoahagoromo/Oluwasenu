@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join Our Team - Welcome to Working in Technology</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome Icons -->
@@ -48,76 +53,120 @@
         </div>
     </nav>
 
-    <!-- Hero Section - Split Design -->
-    <section class="subpage-hero v2" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
-        <div class="container">
+    <!-- Hero Section - Modern Teal Design -->
+    <section class="subpage-hero v2" style="background: linear-gradient(135deg, #18b7ad 0%, #0d9488 50%, #14b8a6 100%); position: relative; overflow: hidden;">
+        <!-- Animated Background Pattern -->
+        <div style="position: absolute; inset: 0; opacity: 0.1; background-image: radial-gradient(circle at 20% 50%, rgba(255,255,255,.3) 1px, transparent 1px), radial-gradient(circle at 80% 80%, rgba(255,255,255,.3) 1px, transparent 1px); background-size: 50px 50px;"></div>
+
+        <!-- Decorative Blobs -->
+        <div style="position: absolute; top: -100px; right: -100px; width: 500px; height: 500px; background: rgba(255,255,255,0.15); border-radius: 50%; filter: blur(80px);"></div>
+        <div style="position: absolute; bottom: -150px; left: -150px; width: 600px; height: 600px; background: rgba(255,255,255,0.1); border-radius: 50%; filter: blur(100px);"></div>
+
+        <div class="container position-relative" style="padding-top: 100px; padding-bottom: 100px;">
             <div class="row align-items-center g-5">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="mb-3">
-                        <span class="badge bg-primary bg-opacity-20 text-primary px-3 py-2 rounded-pill">
-                            <i class="fa-solid fa-users me-2"></i>Volunteer Opportunities
+                <div class="col-lg-7 text-center text-lg-start" data-aos="fade-up">
+                    <div class="mb-4">
+                        <span class="badge px-4 py-2 rounded-pill shadow" style="background: rgba(255,255,255,0.25); color: white; backdrop-filter: blur(10px);">
+                            <i class="fa-solid fa-heart me-2"></i>Volunteer Opportunities
                         </span>
                     </div>
-                    <h1 class="display-2 fw-black text-white mb-4" style="line-height: 1.1;">
-                        Join the Team Behind Indiana's Premier <span class="text-gradient">Tech Conference</span>
+                    <h1 class="fw-black text-white mb-4" style="font-size: clamp(2.5rem, 8vw, 5rem); line-height: 1.1; letter-spacing: -0.02em;">
+                        Join Our<br><span style="background: linear-gradient(45deg, #fbbf24, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Dream Team</span>
                     </h1>
-                    <p class="lead text-white-50 mb-5">
-                        Make a difference, build your network, and gain valuable experience while helping create an
-                        unforgettable
-                        event for the tech community.
+                    <p class="lead text-white mb-5" style="opacity: 0.95; font-size: clamp(1.1rem, 2vw, 1.35rem); max-width: 600px; margin-left: auto; margin-right: auto;">
+                        Be part of something extraordinary. Join 50+ volunteers creating Indiana's most inspiring tech conference and make a real impact.
                     </p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="#apply" class="btn btn-primary btn-lg px-5 rounded-pill">
-                            Apply Now
-                        </a>
-                        <a href="#roles" class="btn btn-outline-light btn-lg px-5 rounded-pill">
-                            View Roles
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-5">
+                        <a href="#apply" class="btn btn-lg px-5 py-3 rounded-pill shadow-lg" style="background: white; color: #18b7ad; font-weight: 700; border: none;">
+                            <i class="fa-solid fa-rocket me-2"></i>Get Started
                         </a>
                     </div>
+
+                    <!-- Stats Grid -->
+                    <div class="row g-3 mt-4">
+                        <div class="col-4">
+                            <div class="p-3 rounded-4 text-center" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+                                <div class="h2 fw-black text-white mb-1">17</div>
+                                <small class="text-white" style="opacity: 0.9;">Years Strong</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3 rounded-4 text-center" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+                                <div class="h2 fw-black text-white mb-1">500+</div>
+                                <small class="text-white" style="opacity: 0.9;">Attendees</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-3 rounded-4 text-center" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+                                <div class="h2 fw-black text-white mb-1">50+</div>
+                                <small class="text-white" style="opacity: 0.9;">Volunteers</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="row g-3">
-                        <div class="col-6">
-                            <div class="p-4 bg-white bg-opacity-10 backdrop-blur rounded-4 text-center">
-                                <div class="display-3 fw-black text-white mb-2">50+</div>
-                                <div class="text-white-50 small fw-semibold">Active Volunteers</div>
+
+                <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left" data-aos-delay="200">
+                    <div class="position-relative">
+                        <!-- Benefit Cards -->
+                        <div class="p-4 bg-white rounded-4 shadow-lg mb-4" style="animation: float 6s ease-in-out infinite; transform: translateX(20px);">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="rounded-3 p-3" style="background: linear-gradient(135deg, #18b7ad, #0d9488);">
+                                    <i class="fa-solid fa-users-line fa-2x text-white"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Network & Connect</h6>
+                                    <small class="text-muted">Meet industry leaders</small>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="p-4 bg-white bg-opacity-10 backdrop-blur rounded-4 text-center">
-                                <div class="display-3 fw-black text-white mb-2">17</div>
-                                <div class="text-white-50 small fw-semibold">Years Strong</div>
+
+                        <div class="p-4 bg-white rounded-4 shadow-lg mb-4" style="animation: float 6s ease-in-out infinite; animation-delay: 2s;">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-warning bg-opacity-10 rounded-3 p-3">
+                                    <i class="fa-solid fa-lightbulb fa-2x text-warning"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Learn & Grow</h6>
+                                    <small class="text-muted">Develop new skills</small>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="p-4 bg-white bg-opacity-10 backdrop-blur rounded-4 text-center">
-                                <div class="display-3 fw-black text-white mb-2">500+</div>
-                                <div class="text-white-50 small fw-semibold">Attendees Served</div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="p-4 bg-white bg-opacity-10 backdrop-blur rounded-4 text-center">
-                                <div class="display-3 fw-black text-white mb-2">100%</div>
-                                <div class="text-white-50 small fw-semibold">Passion Driven</div>
+
+                        <div class="p-4 bg-white rounded-4 shadow-lg" style="animation: float 6s ease-in-out infinite; animation-delay: 4s; transform: translateX(20px);">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-success bg-opacity-10 rounded-3 p-3">
+                                    <i class="fa-solid fa-trophy fa-2x text-success"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Make an Impact</h6>
+                                    <small class="text-muted">Shape the future</small>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <style>
+            @keyframes float {
+                0%, 100% { transform: translateY(0px); }
+                50% { transform: translateY(-20px); }
+            }
+        </style>
     </section>
 
     <!-- Why Volunteer - Horizontal Cards -->
     <section class="py-5 bg-light">
         <div class="container py-5">
             <div class="row mb-5">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <span class="text-primary fw-bold text-uppercase letter-spacing-2">Why Volunteer</span>
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <span class="text-primary fw-bold text-uppercase letter-spacing-2">Why Join Us</span>
                     <h2 class="display-4 fw-black mt-3 mb-4">
-                        It's About More Than <span class="text-accent-gradient">Giving Back</span>
+                        More Than Just <span class="text-accent-gradient">Volunteering</span>
                     </h2>
-                    <p class="text-muted lead">
-                        Volunteering with WWiT is an investment in yourself and your community. Here's what you'll gain.
+                    <p class="text-muted lead" style="max-width: 650px; margin: 0 auto;">
+                        When you join WWiT, you're investing in yourself and Indiana's tech future. Here's what makes it special.
                     </p>
                 </div>
             </div>
@@ -230,160 +279,114 @@
     </section>
 
     <!-- Available Roles -->
-    <section id="roles" class="py-5 bg-light">
+    <!-- Apply Section - Modern Design -->
+    <section id="apply" class="py-5" style="background: linear-gradient(135deg, #f0fdfa 0%, #e0f7f9 50%, #ccfbf1 100%);">
         <div class="container py-5">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <span class="text-primary fw-bold text-uppercase letter-spacing-2">Open Positions</span>
-                <h2 class="display-5 fw-black mt-3 mb-3">Find Your <span class="text-accent-gradient">Perfect Fit</span>
-                </h2>
-                <p class="text-muted">We have opportunities for all skill levels and interests</p>
-            </div>
-
-            <div class="row g-4">
-                <!-- Event Planning -->
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-card h-100 border-start border-4 border-primary">
-                        <div class="d-flex align-items-start gap-4">
-                            <div class="icon-box flex-shrink-0">
-                                <i class="fa-solid fa-calendar-check"></i>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h4 class="fw-bold mb-3">Event Planning & Coordination</h4>
-                                <p class="text-muted mb-3">Help organize logistics, coordinate vendors, and ensure
-                                    smooth execution of
-                                    all conference activities.</p>
-                                <div class="d-flex flex-wrap gap-2 mb-3">
-                                    <span class="badge bg-primary bg-opacity-10 text-primary">Organization</span>
-                                    <span class="badge bg-primary bg-opacity-10 text-primary">Communication</span>
-                                    <span class="badge bg-primary bg-opacity-10 text-primary">Problem Solving</span>
-                                </div>
-                                <small class="text-muted"><i class="fa-solid fa-clock me-2"></i>5-8 hours/month</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Marketing -->
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-card h-100 border-start border-4 border-warning">
-                        <div class="d-flex align-items-start gap-4">
-                            <div class="icon-box bg-warning flex-shrink-0">
-                                <i class="fa-solid fa-megaphone"></i>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h4 class="fw-bold mb-3">Marketing & Social Media</h4>
-                                <p class="text-muted mb-3">Create engaging content, manage social channels, and help
-                                    promote the
-                                    conference to our target audience.</p>
-                                <div class="d-flex flex-wrap gap-2 mb-3">
-                                    <span class="badge bg-warning bg-opacity-10 text-warning">Content Creation</span>
-                                    <span class="badge bg-warning bg-opacity-10 text-warning">Social Media</span>
-                                    <span class="badge bg-warning bg-opacity-10 text-warning">Creativity</span>
-                                </div>
-                                <small class="text-muted"><i class="fa-solid fa-clock me-2"></i>3-5 hours/week</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sponsorship -->
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="feature-card h-100 border-start border-4 border-accent">
-                        <div class="d-flex align-items-start gap-4">
-                            <div class="icon-box flex-shrink-0" style="background: var(--accent);">
-                                <i class="fa-solid fa-handshake-angle"></i>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h4 class="fw-bold mb-3">Sponsorship & Partnerships</h4>
-                                <p class="text-muted mb-3">Build relationships with companies, secure sponsorships, and
-                                    manage partner
-                                    communications.</p>
-                                <div class="d-flex flex-wrap gap-2 mb-3">
-                                    <span class="badge bg-accent bg-opacity-10 text-accent">Networking</span>
-                                    <span class="badge bg-accent bg-opacity-10 text-accent">Sales</span>
-                                    <span class="badge bg-accent bg-opacity-10 text-accent">Relationship Building</span>
-                                </div>
-                                <small class="text-muted"><i class="fa-solid fa-clock me-2"></i>6-10 hours/month</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Content -->
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="feature-card h-100 border-start border-4 border-primary">
-                        <div class="d-flex align-items-start gap-4">
-                            <div class="icon-box flex-shrink-0">
-                                <i class="fa-solid fa-microphone-lines"></i>
-                            </div>
-                            <div class="flex-grow-1">
-                                <h4 class="fw-bold mb-3">Content & Programming</h4>
-                                <p class="text-muted mb-3">Curate speakers, design session tracks, and ensure
-                                    high-quality educational
-                                    content for attendees.</p>
-                                <div class="d-flex flex-wrap gap-2 mb-3">
-                                    <span class="badge bg-primary bg-opacity-10 text-primary">Research</span>
-                                    <span class="badge bg-primary bg-opacity-10 text-primary">Industry Knowledge</span>
-                                    <span class="badge bg-primary bg-opacity-10 text-primary">Curation</span>
-                                </div>
-                                <small class="text-muted"><i class="fa-solid fa-clock me-2"></i>4-6 hours/month</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Apply Section -->
-    <section id="apply" class="py-5"
-        style="background: linear-gradient(135deg, #18b7ad 0%, #0ea5a0 100%); position: relative; overflow: hidden;">
-        <div
-            style="position: absolute; top: -50px; right: -50px; width: 300px; height: 300px; background: rgba(255,255,255,0.1); border-radius: 50%; filter: blur(60px);">
-        </div>
-        <div
-            style="position: absolute; bottom: -100px; left: -100px; width: 400px; height: 400px; background: rgba(255,255,255,0.1); border-radius: 50%; filter: blur(80px);">
-        </div>
-
-        <div class="container py-5 position-relative">
             <div class="row justify-content-center">
-                <div class="col-lg-8 text-center text-white" data-aos="zoom-in">
-                    <h2 class="display-3 fw-black mb-4">Ready to Make an Impact?</h2>
-                    <p class="lead mb-5 opacity-90">
-                        Join our team and help create an unforgettable experience for Indiana's tech community. We can't
-                        wait to
-                        work with you!
-                    </p>
+                <div class="col-lg-10" data-aos="fade-up">
+                    <!-- Main Content Card -->
+                    <div class="bg-white rounded-5 shadow-xl overflow-hidden" style="box-shadow: 0 20px 60px rgba(24, 183, 173, 0.2);">
+                        <div class="row g-0">
+                            <!-- Left Side - Teal Gradient Panel -->
+                            <div class="col-lg-6 p-5 d-flex flex-column justify-content-center position-relative" style="background: linear-gradient(135deg, #18b7ad 0%, #0ea5a0 100%); overflow: hidden;">
+                                <!-- Decorative Pattern -->
+                                <div style="position: absolute; inset: 0; opacity: 0.1; background-image: radial-gradient(circle, rgba(255,255,255,.3) 1px, transparent 1px); background-size: 20px 20px;"></div>
 
-                    <div class="bg-white rounded-4 p-4 d-inline-block mb-4 shadow-lg">
-                        <div class="d-flex align-items-center gap-3 text-start">
-                            <i class="fa-solid fa-envelope fs-1 text-primary"></i>
-                            <div>
-                                <small class="text-muted d-block mb-1">Send us an email</small>
-                                <a href="mailto:info@welcometoworkingintech.org?subject=Volunteer Application"
-                                    class="h5 mb-0 text-dark text-decoration-none fw-bold">
-                                    info@welcometoworkingintech.org
+                                <div class="text-white position-relative">
+                                    <div class="mb-4">
+                                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3" style="width: 80px; height: 80px; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);">
+                                            <i class="fa-solid fa-envelope-open-text fa-2x"></i>
+                                        </div>
+                                    </div>
+                                    <h2 class="display-5 fw-black mb-4">Let's Connect!</h2>
+                                    <p class="mb-4" style="opacity: 0.95; font-size: 1.1rem;">
+                                        Ready to start your volunteer journey? We'd love to hear from you!
+                                    </p>
+
+                                    <!-- What to Include -->
+                                    <div class="mb-4 p-4 rounded-4" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+                                        <h6 class="fw-bold mb-3">📧 What to include in your email:</h6>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2 d-flex align-items-start">
+                                                <i class="fa-solid fa-check-circle me-2 mt-1"></i>
+                                                <span>Which role interests you</span>
+                                            </li>
+                                            <li class="mb-2 d-flex align-items-start">
+                                                <i class="fa-solid fa-check-circle me-2 mt-1"></i>
+                                                <span>Your relevant skills</span>
+                                            </li>
+                                            <li class="mb-2 d-flex align-items-start">
+                                                <i class="fa-solid fa-check-circle me-2 mt-1"></i>
+                                                <span>Why you want to volunteer</span>
+                                            </li>
+                                            <li class="mb-0 d-flex align-items-start">
+                                                <i class="fa-solid fa-check-circle me-2 mt-1"></i>
+                                                <span>Your availability</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Social Links -->
+                                    <div class="pt-3 border-top border-white border-opacity-25">
+                                        <small class="d-block mb-2" style="opacity: 0.8;">Follow us:</small>
+                                        <div class="d-flex gap-3">
+                                            <a href="#" class="text-white text-decoration-none" style="opacity: 0.9;">
+                                                <i class="fa-brands fa-facebook fa-lg"></i>
+                                            </a>
+                                            <a href="#" class="text-white text-decoration-none" style="opacity: 0.9;">
+                                                <i class="fa-brands fa-linkedin fa-lg"></i>
+                                            </a>
+                                            <a href="#" class="text-white text-decoration-none" style="opacity: 0.9;">
+                                                <i class="fa-brands fa-instagram fa-lg"></i>
+                                            </a>
+                                            <a href="#" class="text-white text-decoration-none" style="opacity: 0.9;">
+                                                <i class="fa-brands fa-x-twitter fa-lg"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right Side - Contact Panel -->
+                            <div class="col-lg-6 p-5 d-flex flex-column justify-content-center bg-white">
+                                <div class="text-center mb-4">
+                                    <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3" style="width: 90px; height: 90px; background: linear-gradient(135deg, #18b7ad, #0ea5a0);">
+                                        <i class="fa-solid fa-paper-plane fa-2x text-white"></i>
+                                    </div>
+                                    <h3 class="fw-bold mb-2">Send Us a Message</h3>
+                                    <p class="text-muted mb-0">Click below to compose your email</p>
+                                </div>
+
+                                <!-- Email Button -->
+                                <a href="mailto:info@welcometoworkingintech.org?subject=Volunteer Application - Join the Team&body=Hi WWiT Team,%0D%0A%0D%0AI'm interested in volunteering! Here's some information about me:%0D%0A%0D%0ARole I'm interested in:%0D%0A%0D%0AMy skills/experience:%0D%0A%0D%0AWhy I want to volunteer:%0D%0A%0D%0AMy availability:%0D%0A%0D%0AThank you!"
+                                   class="btn btn-lg rounded-pill shadow-sm mb-4 py-3" style="background: linear-gradient(135deg, #18b7ad, #0ea5a0); color: white; font-weight: 600; border: none;">
+                                    <i class="fa-solid fa-rocket me-2"></i>Compose Email
                                 </a>
+
+                                <!-- Email Display -->
+                                <div class="text-center p-4 rounded-4" style="background: linear-gradient(135deg, #f0fdfa, #e0f7f9);">
+                                    <small class="text-muted d-block mb-2 fw-semibold">Or email us directly:</small>
+                                    <a href="mailto:info@welcometoworkingintech.org" class="fw-bold text-decoration-none" style="color: #18b7ad; font-size: 1.05rem;">
+                                        info@welcometoworkingintech.org
+                                    </a>
+                                </div>
+
+                                <!-- Response Time -->
+                                <div class="mt-4 text-center p-3 rounded-4" style="background: #fff8e1;">
+                                    <small class="text-dark fw-semibold">
+                                        <i class="fa-solid fa-clock me-2" style="color: #f59e0b;"></i>Response time: 24-48 hours
+                                    </small>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <p class="text-white-50 mb-4">Include which role interests you and tell us about yourself!</p>
-
-                    <div
-                        class="d-flex justify-content-center gap-3 mt-5 pt-4 border-top border-white border-opacity-25">
-                        <a href="#" class="text-white text-decoration-none">
-                            <i class="fa-brands fa-facebook fa-2x"></i>
-                        </a>
-                        <a href="#" class="text-white text-decoration-none">
-                            <i class="fa-brands fa-linkedin fa-2x"></i>
-                        </a>
-                        <a href="#" class="text-white text-decoration-none">
-                            <i class="fa-brands fa-instagram fa-2x"></i>
-                        </a>
-                        <a href="#" class="text-white text-decoration-none">
-                            <i class="fa-brands fa-x-twitter fa-2x"></i>
-                        </a>
+                    <!-- Additional Info -->
+                    <div class="text-center mt-5">
+                        <div class="d-inline-flex align-items-center gap-2 px-4 py-3 rounded-pill" style="background: rgba(24, 183, 173, 0.1);">
+                            <i class="fa-solid fa-circle-info" style="color: #18b7ad;"></i>
+                            <span class="fw-semibold" style="color: #18b7ad;">Have questions? We're here to help!</span>
+                        </div>
                     </div>
                 </div>
             </div>
