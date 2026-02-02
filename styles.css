@@ -916,7 +916,7 @@ h6 {
 .student-carousel-modern-track {
   display: flex;
   gap: 24px;
-  animation: scroll-modern 40s linear infinite;
+  animation: scroll-modern 20s linear infinite;
   will-change: transform;
   padding: 0 20px;
 }
