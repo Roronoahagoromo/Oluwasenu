@@ -919,6 +919,8 @@ h6 {
   animation: scroll-modern 20s linear infinite;
   will-change: transform;
   padding: 0 20px;
+  cursor: grab;
+  user-select: none;
 }
 
 .student-carousel-modern-track:hover {
@@ -931,6 +933,95 @@ h6 {
   }
   100% {
     transform: translateX(calc(-100% / 2 - 12px));
+  }
+}
+
+/* Carousel Controls */
+.student-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.carousel-arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(var(--primary-rgb), 0.3);
+}
+
+.carousel-arrow:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(var(--primary-rgb), 0.4);
+}
+
+.carousel-arrow:active {
+  transform: scale(0.95);
+}
+
+.carousel-bullets {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #d1d5db;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.bullet:hover {
+  background: #9ca3af;
+  transform: scale(1.2);
+}
+
+.bullet.active {
+  width: 32px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+}
+
+/* Mobile responsive controls */
+@media (max-width: 768px) {
+  .student-carousel-controls {
+    gap: 1rem;
+  }
+
+  .carousel-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .carousel-bullets {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .bullet.active {
+    width: 24px;
   }
 }
 
