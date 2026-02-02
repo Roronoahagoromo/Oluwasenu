@@ -81,6 +81,90 @@
             padding: 2.5rem;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
         }
+
+        /* Enhanced price text legibility */
+        .pricing-content .text-secondary.fw-medium {
+            font-size: 1.1rem;
+            font-weight: 600 !important;
+            color: #475569 !important;
+        }
+
+        .pricing-content .fs-4 {
+            font-size: 2rem !important;
+            font-weight: 800 !important;
+        }
+
+        /* Early bird timer animation */
+        .early-bird-timer {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.25rem 0.75rem;
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: 20px;
+            border: 2px solid #fbbf24;
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        .early-bird-timer i {
+            color: #d97706;
+            animation: tick-tock 1s ease-in-out infinite;
+        }
+
+        .early-bird-timer span {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #92400e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7);
+            }
+            50% {
+                box-shadow: 0 0 0 8px rgba(251, 191, 36, 0);
+            }
+        }
+
+        @keyframes tick-tock {
+            0%, 100% {
+                transform: rotate(-10deg);
+            }
+            50% {
+                transform: rotate(10deg);
+            }
+        }
+
+        .early-bird-row {
+            background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 2px solid #fbbf24;
+        }
+
+        /* Enhanced card footnotes */
+        .pricing-footnote {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            border-left: 4px solid var(--primary);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            margin-top: 1.5rem;
+            font-size: 0.9rem !important;
+            font-weight: 500 !important;
+            color: #334155 !important;
+            line-height: 1.5;
+            font-style: normal !important;
+            text-align: left !important;
+        }
+
+        .pricing-footnote i {
+            color: var(--primary);
+            margin-right: 0.5rem;
+            font-size: 1rem;
+        }
     </style>
 </head>
 
@@ -153,69 +237,22 @@
     <section class="py-5">
         <div class="container">
             <div class="row g-4 justify-content-center">
-                <!-- Card 1: Students -->
+                <!-- Card 1: Professionals -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="pricing-card student">
-                        <div class="pricing-header">
-                            <span class="price-badge">Discounted</span>
-                            <h3 class="fw-bold fs-2 mb-0"><i class="fa-solid fa-graduation-cap me-2"></i>Students</h3>
-                        </div>
-                        <div class="pricing-content">
-                            <ul class="list-unstyled mb-4">
-                                <li class="d-flex justify-content-between align-items-center mb-3">
-                                    <span class="text-secondary fw-medium">Early Bird</span>
-                                    <span class="fs-4 fw-bold text-dark">$20</span>
-                                </li>
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <span class="text-secondary fw-medium">Regular</span>
-                                    <span class="fs-4 fw-bold text-dark">$40</span>
-                                </li>
-                            </ul>
-                            <p class="text-muted small mt-auto text-center fst-italic">Valid student ID required at
-                                check-in.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2: Non-Profits -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="pricing-card nonprofit" style="scale: 1.05; z-index: 2;">
-                        <div class="pricing-header">
-                            <span class="price-badge">Non-Profit / Education</span>
-                            <h3 class="fw-bold fs-2 mb-0"><i class="fa-solid fa-hand-holding-heart me-2"></i>Partners
-                            </h3>
-                        </div>
-                        <div class="pricing-content">
-                            <div class="text-center mb-3">
-                                <span class="d-block text-secondary small fw-bold text-uppercase">Non-Profits & BSU
-                                    Employees</span>
-                            </div>
-                            <ul class="list-unstyled mb-4">
-                                <li class="d-flex justify-content-between align-items-center mb-3">
-                                    <span class="text-secondary fw-medium">Early Bird</span>
-                                    <span class="fs-4 fw-bold text-dark">$50</span>
-                                </li>
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <span class="text-secondary fw-medium">Regular</span>
-                                    <span class="fs-4 fw-bold text-dark">$60</span>
-                                </li>
-                            </ul>
-                            <p class="text-muted small mt-auto text-center fst-italic">For employees of non-profit orgs
-                                and Ball State University.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3: Professionals -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="pricing-card pro">
                         <div class="pricing-header">
                             <span class="price-badge">General Admission</span>
-                            <h3 class="fw-bold fs-2 mb-0"><i class="fa-solid fa-briefcase me-2"></i>Standard</h3>
+                            <h3 class="fw-bold fs-2 mb-0"><i class="fa-solid fa-briefcase me-2"></i>Professionals</h3>
                         </div>
                         <div class="pricing-content">
+                            <div class="text-center mb-3">
+                                <div class="early-bird-timer">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <span>Ends March 1st</span>
+                                </div>
+                            </div>
                             <ul class="list-unstyled mb-4">
-                                <li class="d-flex justify-content-between align-items-center mb-3">
+                                <li class="early-bird-row d-flex justify-content-between align-items-center">
                                     <span class="text-secondary fw-medium">Early Bird</span>
                                     <span class="fs-4 fw-bold text-dark">$70</span>
                                 </li>
@@ -224,8 +261,77 @@
                                     <span class="fs-4 fw-bold text-dark">$80</span>
                                 </li>
                             </ul>
-                            <p class="text-muted small mt-auto text-center fst-italic">Full access to all sessions and
-                                networking events.</p>
+                            <div class="pricing-footnote mt-auto">
+                                <i class="fa-solid fa-circle-check"></i>
+                                Full access to all sessions and networking events.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Non-Profits -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-card nonprofit">
+                        <div class="pricing-header">
+                            <span class="price-badge">Non-Profit / Education</span>
+                            <h3 class="fw-bold fs-2 mb-0"><i class="fa-solid fa-hand-holding-heart me-2"></i>Partners
+                            </h3>
+                        </div>
+                        <div class="pricing-content">
+                            <div class="text-center mb-3">
+                                <span class="d-block text-secondary small fw-bold text-uppercase mb-2">Non-Profits & BSU
+                                    Employees</span>
+                                <div class="early-bird-timer">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <span>Ends March 1st</span>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="early-bird-row d-flex justify-content-between align-items-center">
+                                    <span class="text-secondary fw-medium">Early Bird</span>
+                                    <span class="fs-4 fw-bold text-dark">$50</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <span class="text-secondary fw-medium">Regular</span>
+                                    <span class="fs-4 fw-bold text-dark">$60</span>
+                                </li>
+                            </ul>
+                            <div class="pricing-footnote mt-auto">
+                                <i class="fa-solid fa-info-circle"></i>
+                                For employees of non-profit organizations and Ball State University.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Students -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-card student">
+                        <div class="pricing-header">
+                            <span class="price-badge">Discounted</span>
+                            <h3 class="fw-bold fs-2 mb-0"><i class="fa-solid fa-graduation-cap me-2"></i>Students</h3>
+                        </div>
+                        <div class="pricing-content">
+                            <div class="text-center mb-3">
+                                <div class="early-bird-timer">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <span>Ends March 1st</span>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="early-bird-row d-flex justify-content-between align-items-center">
+                                    <span class="text-secondary fw-medium">Early Bird</span>
+                                    <span class="fs-4 fw-bold text-dark">$20</span>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center">
+                                    <span class="text-secondary fw-medium">Regular</span>
+                                    <span class="fs-4 fw-bold text-dark">$40</span>
+                                </li>
+                            </ul>
+                            <div class="pricing-footnote mt-auto">
+                                <i class="fa-solid fa-id-card"></i>
+                                Valid student ID required at check-in.
+                            </div>
                         </div>
                     </div>
                 </div>

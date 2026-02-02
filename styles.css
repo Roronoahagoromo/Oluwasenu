@@ -126,6 +126,20 @@ h6 {
   }
 }
 
+/* Anniversary Badge Glow Effect */
+.anniversary-badge {
+  animation: badge-glow 2s ease-in-out infinite;
+}
+
+@keyframes badge-glow {
+  0%, 100% {
+    box-shadow: 0 4px 15px rgba(24, 183, 173, 0.3), 0 0 20px rgba(24, 183, 173, 0.2);
+  }
+  50% {
+    box-shadow: 0 4px 25px rgba(24, 183, 173, 0.6), 0 0 40px rgba(24, 183, 173, 0.4);
+  }
+}
+
 /* ----------------------------------------------------
    BOOTSTRAP OVERRIDES
 ------------------------------------------------------- */
@@ -158,6 +172,19 @@ h6 {
   background: var(--primary);
   color: #fff;
   transform: translateY(-2px);
+}
+
+/* Hero Buttons - Equal size on mobile */
+@media (max-width: 576px) {
+  .hero-buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .hero-btn {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* ----------------------------------------------------
@@ -412,6 +439,26 @@ h6 {
   background: linear-gradient(135deg, hsla(35, 95%, 55%, 0.1), transparent);
   bottom: 20px;
   left: -20px;
+}
+
+/* Hero Info Cards - Date & Location */
+.hero-info-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.hero-info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(24, 183, 173, 0.15) !important;
+  border-color: var(--primary) !important;
+}
+
+.hero-info-icon {
+  transition: all 0.3s ease;
+}
+
+.hero-info-card:hover .hero-info-icon {
+  transform: scale(1.1) rotate(5deg);
 }
 
 /* ----------------------------------------------------
@@ -793,6 +840,261 @@ h6 {
   #team .text-center.mb-5 h2 {
     font-size: 2.5rem;
   }
+
+  /* Beautiful pattern layout for board members on desktop */
+  .board-grid-desktop {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    position: relative;
+  }
+
+  .board-grid-desktop > div:nth-child(1),
+  .board-grid-desktop > div:nth-child(5),
+  .board-grid-desktop > div:nth-child(9) {
+    transform: translateY(-20px);
+  }
+
+  .board-grid-desktop > div:nth-child(3),
+  .board-grid-desktop > div:nth-child(7),
+  .board-grid-desktop > div:nth-child(11) {
+    transform: translateY(20px);
+  }
+
+  .board-grid-desktop .team-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border: 2px solid transparent;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .board-grid-desktop .team-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+  }
+
+  .board-grid-desktop .team-card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .board-grid-desktop .team-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    border-color: var(--primary);
+    box-shadow: 0 20px 40px rgba(24, 183, 173, 0.15);
+    background: #ffffff;
+  }
+
+  .board-grid-desktop .team-avatar {
+    position: relative;
+    transition: all 0.4s ease;
+  }
+
+  .board-grid-desktop .team-card:hover .team-avatar {
+    transform: scale(1.1);
+  }
+}
+
+/* Modern Student Carousel - Captivating Auto-Scroll */
+.student-carousel-modern-wrapper {
+  overflow: hidden;
+  position: relative;
+  padding: 40px 0;
+  margin: 0 -20px;
+  /* Gradient mask for smooth edges */
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+.student-carousel-modern-track {
+  display: flex;
+  gap: 24px;
+  animation: scroll-modern 40s linear infinite;
+  will-change: transform;
+  padding: 0 20px;
+}
+
+.student-carousel-modern-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-modern {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 2 - 12px));
+  }
+}
+
+/* Modern Student Card Design */
+.student-card-modern {
+  min-width: 220px;
+  height: 280px;
+  flex-shrink: 0;
+  position: relative;
+  padding: 2rem 1.5rem;
+  background: #ffffff;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+  overflow: hidden;
+}
+
+.student-card-modern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.student-card-modern:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 20px 60px rgba(24, 183, 173, 0.2);
+  border-color: rgba(24, 183, 173, 0.3);
+}
+
+.student-card-modern:hover::before {
+  opacity: 1;
+}
+
+/* Glowing background effect */
+.student-card-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(24, 183, 173, 0.15) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.student-card-modern:hover .student-card-glow {
+  opacity: 1;
+}
+
+/* Avatar Circle with Gradients */
+.student-avatar-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.student-card-modern:hover .student-avatar-circle {
+  transform: scale(1.15) rotate(8deg);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Gradient variations */
+.gradient-1 .student-avatar-circle {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-2 .student-avatar-circle {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.gradient-3 .student-avatar-circle {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.gradient-4 .student-avatar-circle {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.gradient-5 .student-avatar-circle {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.gradient-6 .student-avatar-circle {
+  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+}
+
+/* Card Text */
+.student-card-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+  transition: color 0.3s ease;
+}
+
+.student-card-modern:hover .student-card-name {
+  color: var(--primary);
+}
+
+.student-card-role {
+  font-size: 0.8rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .student-carousel-modern-wrapper {
+    padding: 30px 0;
+    margin: 0 -15px;
+  }
+
+  .student-card-modern {
+    min-width: 180px;
+    height: 240px;
+    padding: 1.5rem 1rem;
+  }
+
+  .student-avatar-circle {
+    width: 70px;
+    height: 70px;
+    font-size: 1.3rem;
+  }
+
+  .student-card-name {
+    font-size: 0.95rem;
+  }
+
+  .student-card-role {
+    font-size: 0.75rem;
+  }
+
+  @keyframes scroll-modern {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% / 2 - 12px));
+    }
+  }
 }
 
 /* Team subsection headings - Mobile Optimization */
@@ -845,50 +1147,129 @@ h6 {
 }
 
 /* ----------------------------------------------------
-   CONTACT & FORM
+   CONTACT - Modern Card Design
 ------------------------------------------------------- */
-.contact-info-item {
+.contact-card-modern {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  border: 2px solid #f1f5f9;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-card-modern:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary);
+  box-shadow: 0 15px 40px rgba(24, 183, 173, 0.15);
+}
+
+.contact-card-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
-  gap: 15px;
-  padding: 15px;
-  background: #fff;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #f1f5f9;
-  transition: 0.3s;
+  justify-content: center;
+  font-size: 1.75rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  transition: all 0.4s ease;
 }
 
-.contact-info-item:hover {
-  border-color: var(--primary);
-  box-shadow: 0 5px 15px rgba(24, 183, 173, 0.1);
+.contact-card-modern:hover .contact-card-icon {
+  transform: scale(1.1) rotate(5deg);
 }
 
-.contact-icon {
-  width: 45px;
-  height: 45px;
-  background: var(--primary-light);
-  color: var(--primary);
-  display: grid;
-  place-items: center;
-  border-radius: 10px;
-  font-size: 1.2rem;
+.contact-card-icon.phone {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-.custom-form input,
-.custom-form textarea {
-  border: 2px solid #f1f5f9;
-  border-radius: 12px;
-  padding: 0.8rem 1rem;
+.contact-card-icon.email {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.contact-card-icon.location {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.contact-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 0.75rem;
+}
+
+.contact-card-detail {
+  font-size: 1rem;
+  color: #64748b;
+  margin-bottom: 1.25rem;
   font-weight: 500;
-  transition: 0.3s;
+  line-height: 1.6;
 }
 
-.custom-form input:focus,
-.custom-form textarea:focus {
+.contact-card-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.contact-card-link:hover {
+  color: var(--primary-dark);
+  gap: 8px;
+}
+
+.contact-card-link i {
+  transition: transform 0.3s ease;
+}
+
+.contact-card-link:hover i {
+  transform: translateX(4px);
+}
+
+/* Social Icons Modern */
+.social-icon-modern {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.social-icon-modern:hover {
+  background: var(--primary);
+  color: #ffffff;
   border-color: var(--primary);
-  box-shadow: 0 0 0 4px rgba(24, 183, 173, 0.1);
-  outline: none;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(24, 183, 173, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .contact-card-modern {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-card-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5rem;
+  }
 }
 
 /* ----------------------------------------------------
@@ -1447,6 +1828,59 @@ footer a:hover {
 
 .letter-spacing-5 {
   letter-spacing: 5px;
+}
+
+/* Modern Event Details Card */
+.event-details-modern {
+  background: #fff;
+  border: 2px solid #e2e8f0;
+}
+
+.event-detail-item {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.event-detail-item:hover {
+  transform: scale(1.02);
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, #0ea5a0 100%);
+}
+
+.bg-gradient-accent {
+  background: linear-gradient(135deg, var(--accent) 0%, #ea580c 100%);
+}
+
+.event-icon-modern {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  color: white;
+  flex-shrink: 0;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.event-icon-modern-orange {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  color: white;
+  flex-shrink: 0;
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Hero Event Pills */
@@ -2145,22 +2579,27 @@ footer a:hover {
   background: rgba(0, 0, 0, 0.1);
 }
 
-/* Borderless Hero Button */
+/* Glassmorphic Hero Button */
 .btn-hero-ghost {
   padding: 1.2rem 3rem !important;
   font-weight: 700;
   font-size: 1.1rem;
   letter-spacing: 0.02em;
   color: var(--primary);
-  background: transparent;
-  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(24, 183, 173, 0.3) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
 }
 
 .btn-hero-ghost:hover {
   color: var(--primary-dark);
   transform: translateY(-2px);
-  background: rgba(24, 183, 173, 0.05);
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(24, 183, 173, 0.5) !important;
+  box-shadow: 0 8px 25px rgba(24, 183, 173, 0.2);
 }
 
 /* Typographic Pricing Display */
@@ -3124,8 +3563,9 @@ footer a:hover {
     animation-play-state: paused;
   }
 
-  /* Hide all carousel bullet indicators */
-  .carousel-bullets {
+  /* Hide carousel bullet indicators completely */
+  .carousel-bullets,
+  .carousel-bullet {
     display: none !important;
   }
 
@@ -3178,45 +3618,9 @@ footer a:hover {
     display: flex !important;
   }
 
-  /* Hide Student Leads desktop grid */
-  .student-grid-desktop {
-    display: none !important;
-  }
-
-  /* Student Leads - Continuous flow on desktop */
+  /* Hide old Student Leads grid - now using modern carousel */
+  .student-grid-desktop,
   .student-carousel-container {
-    display: block !important;
-    overflow: hidden;
-    position: relative;
-    padding: 20px 0;
-    margin-bottom: 20px;
-    /* Fade-out mask on edges */
-    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
-    -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
-  }
-
-  #studentCarousel {
-    display: flex;
-    gap: 15px;
-    animation: scroll-team 35s linear infinite;
-    will-change: transform;
-  }
-
-  #studentCarousel:hover {
-    animation-play-state: paused;
-  }
-
-  #studentCarousel .student-carousel-item {
-    min-width: 160px;
-    flex-shrink: 0;
-  }
-
-  #studentCarousel .student-carousel-item .team-card {
-    transition: all 0.3s ease;
-  }
-
-  #studentCarousel .student-carousel-item:hover .team-card {
-    transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(24, 183, 173, 0.15);
+    display: none !important;
   }
 }
