@@ -79,63 +79,73 @@
           <div class="row g-4">
             <!-- Event Date Card -->
             <div class="col-12">
-              <div class="hero-info-card p-4 bg-white rounded-4 shadow-sm border border-primary border-opacity-10">
-                <div class="d-flex align-items-center gap-3">
-                  <div class="hero-info-icon d-flex align-items-center justify-content-center bg-teal-light rounded-3"
-                    style="width: 50px; height: 50px; flex-shrink: 0;">
-                    <i class="fa-regular fa-calendar-days text-primary" style="font-size: 1.25rem;"></i>
-                  </div>
-                  <div class="flex-grow-1">
-                    <small class="text-primary fw-bold text-uppercase d-block mb-1"
-                      style="font-size: 0.7rem; letter-spacing: 1px;">
-                      <i class="fa-solid fa-star me-1"></i>Date
-                    </small>
-                    <h5 class="mb-1 fw-bold text-dark">March 13, 2026</h5>
-                    <p class="mb-0 small text-muted lh-sm">Friday, 8:30 AM — 3:30 PM</p>
+              <a href="data:text/calendar;charset=utf-8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//WWiT%20Conference//EN%0ABEGIN:VEVENT%0AUID:wwit-conference-2026@wwit.org%0ADTSTAMP:20260313T083000Z%0ADTSTART:20260313T133000Z%0ADTEND:20260313T203000Z%0ASUMMARY:Welcome%20to%20Working%20in%20Technology%20Conference%0ADESCRIPTION:Join%20us%20for%20Indiana's%20premier%20gathering%20of%20tech%20visionaries.%20A%20full%20day%20of%20high-impact%20keynotes%2C%20tactical%20breakout%20sessions%2C%20networking%2C%20and%20lightning%20talks.%0ALOCATION:6100%20Sam%20Jones%20Expy%2C%20Indianapolis%2C%20IN%2046241%0ASTATUS:CONFIRMED%0AEND:VEVENT%0AEND:VCALENDAR" class="text-decoration-none d-block" title="Add to Calendar" style="transition: transform 0.2s, box-shadow 0.2s;">
+                <div class="hero-info-card p-4 bg-white rounded-4 shadow-sm border border-primary border-opacity-10" style="cursor: pointer;">
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="hero-info-icon d-flex align-items-center justify-content-center bg-teal-light rounded-3"
+                      style="width: 50px; height: 50px; flex-shrink: 0;">
+                      <i class="fa-regular fa-calendar-days text-primary" style="font-size: 1.25rem;"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                      <small class="text-primary fw-bold text-uppercase d-block mb-1"
+                        style="font-size: 0.7rem; letter-spacing: 1px;">
+                        <i class="fa-solid fa-star me-1"></i>Date
+                      </small>
+                      <h5 class="mb-1 fw-bold text-dark">March 13, 2026</h5>
+                      <p class="mb-0 small text-muted lh-sm">Friday, 8:30 AM — 3:30 PM</p>
+                    </div>
+                    <i class="fa-solid fa-calendar-plus text-primary" style="font-size: 1.25rem;"></i>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <!-- Event Location Card -->
             <div class="col-12">
-              <div class="hero-info-card p-4 bg-white rounded-4 shadow-sm border border-primary border-opacity-10">
-                <div class="d-flex align-items-center gap-3">
-                  <div class="hero-info-icon d-flex align-items-center justify-content-center bg-orange-light rounded-3"
-                    style="width: 50px; height: 50px; flex-shrink: 0;">
-                    <i class="fa-solid fa-location-dot text-primary" style="font-size: 1.25rem;"></i>
-                  </div>
-                  <div class="flex-grow-1">
-                    <small class="text-primary fw-bold text-uppercase d-block mb-1"
-                      style="font-size: 0.7rem; letter-spacing: 1px;">
-                      <i class="fa-solid fa-map-pin me-1"></i>Location
-                    </small>
-                    <h5 class="mb-1 fw-bold text-dark">Infosys Lab</h5>
-                    <p class="mb-0 small text-muted lh-sm">Indianapolis, Indiana</p>
+              <a href="https://www.google.com/maps/search/?api=1&query=6100+Sam+Jones+Expy+Indianapolis+IN+46241" target="_blank" class="text-decoration-none d-block" style="transition: transform 0.2s, box-shadow 0.2s;">
+                <div class="hero-info-card p-4 bg-white rounded-4 shadow-sm border border-primary border-opacity-10" style="cursor: pointer;">
+                  <div class="d-flex align-items-center gap-3">
+                    <div class="hero-info-icon d-flex align-items-center justify-content-center bg-orange-light rounded-3"
+                      style="width: 50px; height: 50px; flex-shrink: 0;">
+                      <i class="fa-solid fa-location-dot text-primary" style="font-size: 1.25rem;"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                      <small class="text-primary fw-bold text-uppercase d-block mb-1"
+                        style="font-size: 0.7rem; letter-spacing: 1px;">
+                        <i class="fa-solid fa-map-pin me-1"></i>Location
+                      </small>
+                      <h5 class="mb-1 fw-bold text-dark">Infosys Lab</h5>
+                      <p class="mb-0 small text-muted lh-sm">
+                        <i class="fa-solid fa-map-marker-alt me-1"></i>6100 Sam Jones Expy, Indianapolis, IN 46241
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <!-- Keynote Speaker -->
             <div class="col-12">
-              <div
-                class="hero-info-card p-4 bg-gradient-to-br from-white to-gray-50 rounded-4 shadow-sm border border-primary border-opacity-25">
-                <div class="d-flex align-items-center gap-3">
-                  <img src="images/bette_smith.png" alt="Bette Smith"
-                    class="rounded-circle border border-3 border-primary"
-                    style="width: 70px; height: 70px; object-fit: cover;">
-                  <div class="flex-grow-1">
-                    <small class="text-primary fw-bold text-uppercase letter-spacing-2 d-block mb-1"
-                      style="font-size: 0.7rem;">
-                      <i class="fa-solid fa-star me-1"></i>Keynote Speaker
-                    </small>
-                    <h5 class="mb-1 fw-bold text-dark">Bette Smith</h5>
-                    <p class="mb-0 small text-muted lh-sm">Director, Center for Innovation and Collaboration<br>Ball
-                      State University</p>
+              <a href="speakers.html" class="text-decoration-none d-block" style="transition: transform 0.2s, box-shadow 0.2s;">
+                <div
+                  class="hero-info-card p-4 bg-gradient-to-br from-white to-gray-50 rounded-4 shadow-sm border border-primary border-opacity-25" style="cursor: pointer;">
+                  <div class="d-flex align-items-center gap-3">
+                    <img src="images/bette_smith.png" alt="Bette Smith"
+                      class="rounded-circle border border-3 border-primary"
+                      style="width: 70px; height: 70px; object-fit: cover;">
+                    <div class="flex-grow-1">
+                      <small class="text-primary fw-bold text-uppercase letter-spacing-2 d-block mb-1"
+                        style="font-size: 0.7rem;">
+                        <i class="fa-solid fa-star me-1"></i>Keynote Speaker
+                      </small>
+                      <h5 class="mb-1 fw-bold text-dark">Bette Smith</h5>
+                      <p class="mb-0 small text-muted lh-sm">Director, Center for Innovation and Collaboration<br>Ball
+                        State University</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-primary" style="font-size: 1.25rem;"></i>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -259,27 +269,34 @@
           <!-- Clean Event Details -->
           <div class="d-flex flex-wrap align-items-center gap-4 mb-5" data-aos="fade-up" data-aos-delay="400">
             <!-- Date -->
-            <div class="d-flex align-items-center gap-3">
-              <i class="fa-regular fa-calendar-days text-primary" style="font-size: 1.5rem;"></i>
-              <div>
-                <small class="text-muted text-uppercase d-block mb-1"
-                  style="font-size: 0.7rem; font-weight: 600; letter-spacing: 1px;">Date</small>
-                <span class="text-dark fw-bold d-block" style="font-size: 1.05rem;">Friday, March 13, 2026</span>
+            <a href="data:text/calendar;charset=utf-8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//WWiT%20Conference//EN%0ABEGIN:VEVENT%0AUID:wwit-conference-2026@wwit.org%0ADTSTAMP:20260313T083000Z%0ADTSTART:20260313T133000Z%0ADTEND:20260313T203000Z%0ASUMMARY:Welcome%20to%20Working%20in%20Technology%20Conference%0ADESCRIPTION:Join%20us%20for%20Indiana's%20premier%20gathering%20of%20tech%20visionaries.%20A%20full%20day%20of%20high-impact%20keynotes%2C%20tactical%20breakout%20sessions%2C%20networking%2C%20and%20lightning%20talks.%0ALOCATION:6100%20Sam%20Jones%20Expy%2C%20Indianapolis%2C%20IN%2046241%0ASTATUS:CONFIRMED%0AEND:VEVENT%0AEND:VCALENDAR" class="text-decoration-none d-block" title="Add to Calendar" style="transition: opacity 0.2s;">
+              <div class="d-flex align-items-center gap-3" style="cursor: pointer;">
+                <i class="fa-regular fa-calendar-days text-primary" style="font-size: 1.5rem;"></i>
+                <div>
+                  <small class="text-muted text-uppercase d-block mb-1"
+                    style="font-size: 0.7rem; font-weight: 600; letter-spacing: 1px;">Date</small>
+                  <span class="text-dark fw-bold d-block" style="font-size: 1.05rem;">Friday, March 13, 2026</span>
+                </div>
               </div>
-            </div>
+            </a>
 
             <!-- Divider -->
             <div style="width: 1px; height: 40px; background: #e2e8f0;"></div>
 
             <!-- Location -->
-            <div class="d-flex align-items-center gap-3">
-              <i class="fa-solid fa-location-dot text-primary" style="font-size: 1.5rem;"></i>
-              <div>
-                <small class="text-muted text-uppercase d-block mb-1"
-                  style="font-size: 0.7rem; font-weight: 600; letter-spacing: 1px;">Location</small>
-                <span class="text-dark fw-bold d-block" style="font-size: 1.05rem;">Infosys Lab, Indianapolis</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=6100+Sam+Jones+Expy+Indianapolis+IN+46241" target="_blank" class="text-decoration-none d-block" style="transition: opacity 0.2s;">
+              <div class="d-flex align-items-center gap-3" style="cursor: pointer;">
+                <i class="fa-solid fa-location-dot text-primary" style="font-size: 1.5rem;"></i>
+                <div>
+                  <small class="text-muted text-uppercase d-block mb-1"
+                    style="font-size: 0.7rem; font-weight: 600; letter-spacing: 1px;">Location</small>
+                  <span class="text-dark fw-bold d-block" style="font-size: 1.05rem;">Infosys Lab, Indianapolis</span>
+                  <span class="text-muted d-block" style="font-size: 0.85rem; text-decoration: underline;">
+                    <i class="fa-solid fa-map-marker-alt me-1"></i>6100 Sam Jones Expy, Indianapolis, IN 46241
+                  </span>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-4">
